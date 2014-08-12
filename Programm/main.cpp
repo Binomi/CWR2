@@ -65,16 +65,16 @@ void Doppelpendel::initalize(double _l2, double _m2, double _phi1, double _dphi1
 
 void Doppelpendel::berechne_trajektorie(){
     ofstream out;
-    out.open("test.txt");
+    out.open("test4.txt");
     double dt = 0.1;
-    for(t=0; t<10000; t+=dt) {
+    for(t=0; t<10; t+=dt) {
         x1 = l1*sin(phi1);
         y1 = -l1*cos(phi1);
         x2 = x1+l2*sin(phi2);
         y2 = y1-l2*cos(phi2);
-        out << t << "\t" << x1 << "\t" << y1 << "\t" << x2 << "\t" << y2 << endl;
+        out << t << "\t" << x1 << "\t" << y1 << "\t" << x2 << "\t" << y2 << "\t" << sqrt(x2*x2+y2*y2) << endl;
 
-        RK2_Integrator(dt);
+        RK4_Integrator(dt);
     }
 
 }
@@ -86,7 +86,7 @@ void Doppelpendel::RK2_Integrator(double dt) {
     double n1_2 = dt*d2phi2dt2(phi1,dphi1,phi2,dphi2);
 
     double k2_1 = dt*(dphi1+n1_1/2.);
-    double k2_2 = dt*(dphi1+n1_1/2.);
+    double k2_2 = dt*(dphi2+n1_2/2.);
     double n2_1 = dt*d2phi1dt2(phi1+k1_1/2.,dphi1+n1_1/2.,phi2+k1_2/2.,dphi2+n1_2/2.);
     double n2_2 = dt*d2phi2dt2(phi1+k1_1/2.,dphi1+n1_1/2.,phi2+k1_2/2.,dphi2+n1_2/2.);
 
@@ -97,7 +97,30 @@ void Doppelpendel::RK2_Integrator(double dt) {
 }
 
 void Doppelpendel::RK4_Integrator(double dt) {
+    double k1_1 = dt*dphi1;
+    double k1_2 = dt*dphi2;
+    double n1_1 = dt*d2phi1dt2(phi1,dphi1,phi2,dphi2);
+    double n1_2 = dt*d2phi2dt2(phi1,dphi1,phi2,dphi2);
 
+    double k2_1 = dt*(dphi1+n1_1/2.);
+    double k2_2 = dt*(dphi2+n1_2/2.);
+    double n2_1 = dt*d2phi1dt2(phi1+k1_1/2.,dphi1+n1_1/2.,phi2+k1_2/2.,dphi2+n1_2/2.);
+    double n2_2 = dt*d2phi2dt2(phi1+k1_1/2.,dphi1+n1_1/2.,phi2+k1_2/2.,dphi2+n1_2/2.);
+
+    double k3_1 = dt*(dphi1+n2_1/2.);
+    double k3_2 = dt*(dphi2+n2_2/2.);
+    double n3_1 = dt*d2phi1dt2(phi1+k2_1/2.,dphi1+n2_1/2.,phi2+k2_2/2.,dphi2+n2_2/2.);
+    double n3_2 = dt*d2phi2dt2(phi1+k2_1/2.,dphi1+n2_1/2.,phi2+k2_2/2.,dphi2+n2_2/2.);
+
+    double k4_1 = dt*(dphi1+n3_1);
+    double k4_2 = dt*(dphi2+n3_2);
+    double n4_1 = dt*d2phi1dt2(phi1+k3_1,dphi1+n3_1,phi2+k3_2,dphi2+n3_2);
+    double n4_2 = dt*d2phi2dt2(phi1+k3_1,dphi1+n3_1,phi2+k3_2,dphi2+n3_2);
+
+    phi1 += (k1_1+2.*k2_1+2.*k3_1+k4_1)/6.;
+    phi2 += (k1_2+2.*k2_2+2.*k3_2+k4_2)/6.;
+    dphi1 +=(n1_1+2.*n2_1+2.*n3_1+n4_1)/6.;
+    dphi2 +=(n1_2+2.*n2_2+2.*n3_2+n4_2)/6.;
 }
 
 double Doppelpendel::d2phi1dt2(double _phi1, double _dphi1, double _phi2, double _dphi2){
@@ -115,8 +138,8 @@ double Doppelpendel::d2phi2dt2(double _phi1, double _dphi1, double _phi2, double
 int main()
 {
     Doppelpendel pendel;
-    double l2=10;
-    double m2=0.1;
+    double l2=4.;
+    double m2=0.3;
     pendel.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
     pendel.berechne_trajektorie();
     return 0;
