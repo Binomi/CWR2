@@ -67,7 +67,7 @@ void Doppelpendel::berechne_trajektorie(){
     ofstream out;
     out.open("test.txt");
     double dt = 0.1;
-    for(t=0; t<1000; t+=dt) {
+    for(t=0; t<10000; t+=dt) {
         x1 = l1*sin(phi1);
         y1 = -l1*cos(phi1);
         x2 = x1+l2*sin(phi2);
@@ -115,8 +115,8 @@ double Doppelpendel::d2phi2dt2(double _phi1, double _dphi1, double _phi2, double
 int main()
 {
     Doppelpendel pendel;
-    double l2=1.0;
-    double m2=0.3;
+    double l2=10;
+    double m2=0.1;
     pendel.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
     pendel.berechne_trajektorie();
     return 0;
