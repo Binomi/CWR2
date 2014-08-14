@@ -1,6 +1,9 @@
 #include <iostream>
 #include <math.h>
 #include <fstream>
+#include <string>
+#include <sstream>
+#include <windows.h>
 
 using namespace std;
 
@@ -34,7 +37,7 @@ class Doppelpendel {
     void initalize(double, double, double, double, double, double);
 
     // Berechne die Trajektorie der beiden Körper
-    void berechne_trajektorie();
+    void berechne_trajektorie(double, double, bool);
 
     // Runge-Kutta 2.Ordnung
     void RK2_Integrator(double);
@@ -42,8 +45,8 @@ class Doppelpendel {
     // Runge-Kutta 4.Ordnung
     void RK4_Integrator(double);
 
-    double d2phi1dt2 (double, double, double, double);
-    double d2phi2dt2 (double, double, double, double);
+    double d2phi1dt2(double, double, double, double);
+    double d2phi2dt2(double, double, double, double);
 };
 
 Doppelpendel::Doppelpendel(){
@@ -63,20 +66,36 @@ void Doppelpendel::initalize(double _l2, double _m2, double _phi1, double _dphi1
 }
 
 
-void Doppelpendel::berechne_trajektorie(){
+void Doppelpendel::berechne_trajektorie(double t_max, double dt, bool useRK4){
     ofstream out;
-    out.open("test4.txt");
-    double dt = 0.1;
-    for(t=0; t<10; t+=dt) {
+    stringstream l2str;
+    l2str << l2;
+    stringstream m2str;
+    m2str << m2;
+    stringstream t_max_str;
+    t_max_str << t_max;
+    stringstream dt_str;
+    dt_str << dt;
+    string datname = "sim_dat\\l2="+l2str.str()+"_m2="+m2str.str()+"_tmax="+t_max_str.str()+"_dt="+dt_str.str();
+    if(useRK4)  datname+="_rk4.txt";
+    else        datname+="_rk2.txt";
+    out.open(datname.c_str());
+    for(t=0; t<t_max; t+=dt) {
         x1 = l1*sin(phi1);
         y1 = -l1*cos(phi1);
         x2 = x1+l2*sin(phi2);
         y2 = y1-l2*cos(phi2);
-        out << t << "\t" << x1 << "\t" << y1 << "\t" << x2 << "\t" << y2 << "\t" << sqrt(x2*x2+y2*y2) << endl;
+        double vx1 = l1*cos(phi1)*dphi1;
+        double vy1 = l1*sin(phi1)*dphi1;
+        double vx2 = vx1+l2*cos(phi2)*dphi2;
+        double vy2 = vy1+l2*sin(phi2)*dphi2;
+
+        out << t << "  " << x1 << "  " << y1 << "  " << x2 << "  " << y2 << "  " << vx1 << "  " << vy1 << "  " << vx2 << "  " << vy2 << "  " << sqrt(vx2*vx2+vy2*vy2)  << endl;
 
         RK4_Integrator(dt);
     }
-
+    out.close();
+    CopyFileA(datname.c_str(), "test.txt",false);
 }
 
 void Doppelpendel::RK2_Integrator(double dt) {
@@ -141,7 +160,7 @@ int main()
     double l2=4.;
     double m2=0.3;
     pendel.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
-    pendel.berechne_trajektorie();
+    pendel.berechne_trajektorie(10000.,0.1,true);
     return 0;
 }
 
