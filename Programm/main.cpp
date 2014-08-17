@@ -3,7 +3,6 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-#include <windows.h>
 
 using namespace std;
 
@@ -30,23 +29,37 @@ class Doppelpendel {
     double x2;
     double y2;
 
+    double vx1;
+    double vy1;
+    double vx2;
+    double vy2;
+
+    double E0;
+    double E;
+
+    double salto[2];
+
     //Konstruktor
     Doppelpendel();
 
     //init
-    void initalize(double, double, double, double, double, double);
+    void initalize(double _l2, double _m2, double _phi1, double _dphi1dt, double _phi2, double _dphi2dt);
+
+    void kartesisch();
+
+    double energie();
 
     // Berechne die Trajektorie der beiden Körper
-    void berechne_trajektorie(double, double, bool);
+    void berechne_trajektorie(double t_max, double dt, bool useRK4);
 
     // Runge-Kutta 2.Ordnung
-    void RK2_Integrator(double);
+    void RK2_Integrator(double dt);
 
     // Runge-Kutta 4.Ordnung
-    void RK4_Integrator(double);
+    void RK4_Integrator(double dt);
 
-    double d2phi1dt2(double, double, double, double);
-    double d2phi2dt2(double, double, double, double);
+    double d2phi1dt2(double _phi1, double _dphi1, double _phi2, double _dphi2);
+    double d2phi2dt2(double _phi1, double _dphi1, double _phi2, double _dphi2);
 };
 
 Doppelpendel::Doppelpendel(){
@@ -63,10 +76,31 @@ void Doppelpendel::initalize(double _l2, double _m2, double _phi1, double _dphi1
     phi2 = _phi2;
     dphi1 = _dphi1dt;
     dphi2 = _dphi2dt;
+    kartesisch();
+    E0 = energie();
+    salto[0] = 0;
+    salto[1] = 0;
+}
+
+void Doppelpendel::kartesisch(){
+    x1 = l1*sin(phi1);
+    y1 = -l1*cos(phi1);
+    x2 = x1+l2*sin(phi2);
+    y2 = y1-l2*cos(phi2);
+
+    vx1 = l1*cos(phi1)*dphi1;
+    vy1 = l1*sin(phi1)*dphi1;
+    vx2 = vx1+l2*cos(phi2)*dphi2;
+    vy2 = vy1+l2*sin(phi2)*dphi2;
+}
+
+double Doppelpendel::energie(){
+    return m1*g*y1+m2*g*y2+0.5*m1*(vx1*vx1+vy1*vy1)+0.5*m2*(vx2*vx2+vy2*vy2);
 }
 
 
 void Doppelpendel::berechne_trajektorie(double t_max, double dt, bool useRK4){
+    /*
     ofstream out;
     stringstream l2str;
     l2str << l2;
@@ -80,22 +114,30 @@ void Doppelpendel::berechne_trajektorie(double t_max, double dt, bool useRK4){
     if(useRK4)  datname+="_rk4.txt";
     else        datname+="_rk2.txt";
     out.open(datname.c_str());
-    for(t=0; t<t_max; t+=dt) {
-        x1 = l1*sin(phi1);
-        y1 = -l1*cos(phi1);
-        x2 = x1+l2*sin(phi2);
-        y2 = y1-l2*cos(phi2);
-        double vx1 = l1*cos(phi1)*dphi1;
-        double vy1 = l1*sin(phi1)*dphi1;
-        double vx2 = vx1+l2*cos(phi2)*dphi2;
-        double vy2 = vy1+l2*sin(phi2)*dphi2;
-
-        out << t << "  " << x1 << "  " << y1 << "  " << x2 << "  " << y2 << "  " << vx1 << "  " << vy1 << "  " << vx2 << "  " << vy2 << "  " << sqrt(vx2*vx2+vy2*vy2)  << endl;
-
-        RK4_Integrator(dt);
+    */
+    t=0;
+    while(t<t_max) {
+        /*
+        out << t << "  " << x1 << "  " << y1 << "  " << x2 << "  " << y2 << "  "
+            << vx1 << "  " << vy1 << "  " << vx2 << "  " << vy2 << "  " << sqrt(vx2*vx2+vy2*vy2)  << "  " << E << "  "
+            << phi1 << "  " << phi2 << endl;
+        */
+        double phi_alt[] = {phi1, phi2};
+        if(useRK4) {
+            RK4_Integrator(dt);
+        } else {
+            RK2_Integrator(dt);
+        }
+        kartesisch();
+        E = energie();
+        double phi_neu [] = {phi1, phi2};
+        for(int i=0; i<2; i++) {
+            if(floor(phi_neu[i]/(2.*M_PI)+0.5) != floor(phi_alt[i]/(2.*M_PI)+0.5))
+                salto[i]++;
+        }
     }
-    out.close();
-    CopyFileA(datname.c_str(), "test.txt",false);
+    //out.close();
+    //CopyFileA(datname.c_str(), "test.txt",false);
 }
 
 void Doppelpendel::RK2_Integrator(double dt) {
@@ -113,6 +155,8 @@ void Doppelpendel::RK2_Integrator(double dt) {
     phi2 += k2_2;
     dphi1 += n2_1;
     dphi2 += n2_2;
+
+    t+=dt;
 }
 
 void Doppelpendel::RK4_Integrator(double dt) {
@@ -140,6 +184,8 @@ void Doppelpendel::RK4_Integrator(double dt) {
     phi2 += (k1_2+2.*k2_2+2.*k3_2+k4_2)/6.;
     dphi1 +=(n1_1+2.*n2_1+2.*n3_1+n4_1)/6.;
     dphi2 +=(n1_2+2.*n2_2+2.*n3_2+n4_2)/6.;
+
+    t+=dt;
 }
 
 double Doppelpendel::d2phi1dt2(double _phi1, double _dphi1, double _phi2, double _dphi2){
@@ -154,13 +200,54 @@ double Doppelpendel::d2phi2dt2(double _phi1, double _dphi1, double _phi2, double
     return ((m1+m2)*l1*_dphi1*_dphi1*s-(m1+m2)*g*sin(_phi2)+m2*l2*_dphi2*_dphi2*s*c+g*(m1+m2)*sin(_phi1))/(l2*((m1+m2)-m2*c*c));
 }
 
-int main()
-{
-    Doppelpendel pendel;
-    double l2=4.;
-    double m2=0.3;
-    pendel.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
-    pendel.berechne_trajektorie(10000.,0.1,true);
-    return 0;
+//----------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+double d1(Doppelpendel a, Doppelpendel b) {
+    double dx1 = a.x1-b.x1;
+    double dy1 = a.y1-b.y1;
+    return sqrt(dx1*dx1+dy1*dy1);
 }
 
+double d2(Doppelpendel a, Doppelpendel b) {
+    double dx2 = a.x2-b.x2;
+    double dy2 = a.y2-b.y2;
+    return sqrt(dx2*dx2+dy2*dy2);
+}
+
+int main()
+{
+    ofstream out("test24.txt");
+
+    double l2=0.5;
+    double m2=0.05;
+    Doppelpendel pendel2, pendel4;
+    pendel2.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
+    pendel4.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
+
+    double dt = 0.005;
+    double d1sum = 0;
+    double d2sum = 0;
+    for(double t=0; t<20.; t+=dt) {
+        pendel2.berechne_trajektorie(dt,dt,false);
+        pendel4.berechne_trajektorie(dt,dt,true);
+        d1sum += d1(pendel2, pendel4);
+        d2sum += d2(pendel2, pendel4);
+        out << t << "  " << d1sum << "  " << d2sum << "  "
+                << pendel2.x1 << "  " << pendel2.y1 << "  " << pendel2.x2 << "  " << pendel2.y2 << "  "
+                << pendel4.x1 << "  " << pendel4.y1 << "  " << pendel4.x2 << "  " << pendel4.y2 << "  "
+                << pendel2.E << "  "  << pendel4.E  << endl;
+    }
+    out.close();
+    cout << pendel2.salto[0] << "  " << pendel2.salto[1] << "\n" << pendel4.salto[0] << "  " << pendel4.salto[1] << endl;
+
+    ofstream out2("testsplot.txt");
+    for(int i=-10; i<10; i++) {
+        for(int j=-10; j<10; j++) {
+            out2 << i << "  " << j << "  " << i+j << endl;
+            if(j%2!=0) out2 << endl;
+        }
+    }
+    out2.close();
+    return 0;
+}
