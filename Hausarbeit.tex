@@ -161,7 +161,13 @@ Note:
 \label{sec:einleitung}
 In dieser Hausarbeit stehen die Bewegungen eines Doppelpendels im Vordergrund.\\
 
-BILD\\
+\begin{figure}[!htb]
+	\centering	
+	\includegraphics[scale=0.8]{doppelpendel.png}
+	\caption{Doppelpendel mit wichtigen Größen \protect\footnotemark}
+\end{figure}
+\footnotetext{Quelle: http://me-lrt.de/img/vari-u05-2-doppelpendel.png}
+
 Man kann es mit folgendem System gekoppelter Differentialgleichungen beschreiben.
 \begin{align}
 	Ml_1\ddot{\varphi}_1 + m_2l_2\ddot{\varphi}_2\cos\left(\varphi_1-\varphi_2\right) + m_2l_2\dot{\varphi}_2^2\sin\left(\varphi_1-\varphi_2\right) + Mg\sin\varphi_1 &= 0 \label{eq:bew1} \\
@@ -216,8 +222,13 @@ Sie hat folgende Attribute:
 	\item Saltozähler
 	\item Zeit???
 \end{itemize}
+Die Berechnung der Energie dient der Beurteilung, wie gut die Trajektorie berechnet wurde, da sie konstant sein sollte.
+Die Zählung der Saltos - also ... - habe ich hinzugefügt, um das Verhalten des Pendels einfacher beurteilen zu können, vor allem in Hinblick auf verschiedene Massen- und Längenverhältnisse.
+So muss nicht jede Trajektorie angeschaut werden.\\
 Der \textit{Konstruktor} setzt $m_1=1\si{\kilo\gram}$ und $l_1=1\si{\meter}$, da wir uns hier nur auf diesen Fall beschränken.
-Da alle Attribute jedoch \textit{public} sind, könnte man diese beiden auch ändern.\\
+Da alle Attribute jedoch \textit{public} sind, könnte man diese beiden auch ändern.
+Mit der Memberfunktion \textit{initialize} werden die restlichen Variablen gesetzt.
+So kann diese öfters aufgerufen werden und das Doppelpendel mit neuen Anfangsbedingungen gestartet werden.\\
 Berechnung der Trajektorie\\
 Außerdem hat sie noch weitere Methoden:
 \begin{itemize}
@@ -226,6 +237,8 @@ Außerdem hat sie noch weitere Methoden:
 	\item Berechnung der kartesischen Koordinaten und deren Ableitungen
 	\item Berechnung der Gesamtenergie
 \end{itemize}
+
+Des Weiteren habe ich noch zwei Methoden implementiert, die den Abstand der Massen zwei verschiedener Doppelpendel zurückgibt.
 
 \section{Vergleich der Integrationsverfahren}
 Zwar ist Runge-Kutta 2.Ordnung mit gleicher Integrationsschrittweite schneller als der 4.Ordnung, aber auch ungenauer. 
