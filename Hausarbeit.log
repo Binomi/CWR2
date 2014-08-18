@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.20)  18 AUG 2014 07:50
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.20)  18 AUG 2014 10:23
 entering extended mode
 **Hausarbeit.tex
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Hausarbeit.tex
@@ -957,20 +957,23 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \EQ_tag_box=\box59
 \g_EQ_temprow_int=\count170
 )
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\import\import.sty"
+Package: import 2009/03/23  v 5.1
+)
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Hausarbeit.aux
 ")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
 
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 "
@@ -1096,21 +1099,21 @@ File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 \c@lstlisting=\count177
 \Hy@linkcounter=\count178
 \c__siunitx_mathsf_int=\count179
-LaTeX Font Info:    Try loading font information for U+lasy on input line 119.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 122.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 119.
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 119.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 119.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 122.
 
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -1127,29 +1130,111 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 File: doppelpendel.png Graphic file (type png)
 
 <use doppelpendel.png>
-Package pdftex.def Info: doppelpendel.png used on input line 164.
+Package pdftex.def Info: doppelpendel.png used on input line 167.
 (pdftex.def)             Requested size: 237.88905pt x 186.09549pt.
  [3 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/doppelpende
 l.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 216.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 220.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 216.
- [4] [5] [6]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 220.
+ [4] [5]
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/salto
+1rk4.tex" <Programm/salto1rk4.pdf, id=34, 361.35pt x 252.945pt>
+File: Programm/salto1rk4.pdf Graphic file (type pdf)
+
+<use Programm/salto1rk4.pdf>
+Package pdftex.def Info: Programm/salto1rk4.pdf used on input line 415.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/salto
+2rk4.tex" <Programm/salto2rk4.pdf, id=35, 361.35pt x 252.945pt>
+File: Programm/salto2rk4.pdf Graphic file (type pdf)
+
+<use Programm/salto2rk4.pdf>
+Package pdftex.def Info: Programm/salto2rk4.pdf used on input line 1004.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie_rk4.tex" <Programm/energie_rk4.pdf, id=36, 361.35pt x 252.945pt>
+File: Programm/energie_rk4.pdf Graphic file (type pdf)
+
+<use Programm/energie_rk4.pdf>
+Package pdftex.def Info: Programm/energie_rk4.pdf used on input line 107.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie0_rk4.tex" <Programm/energie0_rk4.pdf, id=37, 361.35pt x 252.945pt>
+File: Programm/energie0_rk4.pdf Graphic file (type pdf)
+
+<use Programm/energie0_rk4.pdf>
+Package pdftex.def Info: Programm/energie0_rk4.pdf used on input line 106.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
+ktorie1.tex" <Programm/trajektorie1.pdf, id=38, 361.35pt x 252.945pt>
+File: Programm/trajektorie1.pdf Graphic file (type pdf)
+
+<use Programm/trajektorie1.pdf>
+Package pdftex.def Info: Programm/trajektorie1.pdf used on input line 106.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
+ktorie2.tex" <Programm/trajektorie2.pdf, id=39, 361.35pt x 252.945pt>
+File: Programm/trajektorie2.pdf Graphic file (type pdf)
+
+<use Programm/trajektorie2.pdf>
+Package pdftex.def Info: Programm/trajektorie2.pdf used on input line 104.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
+ktorie3.tex" <Programm/trajektorie3.pdf, id=40, 361.35pt x 252.945pt>
+File: Programm/trajektorie3.pdf Graphic file (type pdf)
+
+<use Programm/trajektorie3.pdf>
+Package pdftex.def Info: Programm/trajektorie3.pdf used on input line 104.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
+ktorie4.tex" <Programm/trajektorie4.pdf, id=41, 361.35pt x 252.945pt>
+File: Programm/trajektorie4.pdf Graphic file (type pdf)
+
+<use Programm/trajektorie4.pdf>
+Package pdftex.def Info: Programm/trajektorie4.pdf used on input line 106.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
+ktorie5.tex" <Programm/trajektorie5.pdf, id=42, 361.35pt x 252.945pt>
+File: Programm/trajektorie5.pdf Graphic file (type pdf)
+
+<use Programm/trajektorie5.pdf>
+Package pdftex.def Info: Programm/trajektorie5.pdf used on input line 106.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+) [6 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/s
+alto1rk4.pdf>] [7 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbe
+it/Programm/salto2rk4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II
+/Hausarbeit/Programm/energie_rk4.pdf>] [8 <C:/Users/Felix Home/Documents/Uni/2.
+Semester/CWR II/Hausarbeit/Programm/energie0_rk4.pdf> <C:/Users/Felix Home/Docu
+ments/Uni/2.Semester/CWR II/Hausarbeit/Programm/trajektorie1.pdf>] [9 <C:/Users
+/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/trajektorie2.pd
+f> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/tra
+jektorie3.pdf>] [10 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausar
+beit/Programm/trajektorie4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/C
+WR II/Hausarbeit/Programm/trajektorie5.pdf>]
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Hausarbeit.aux
 ") ) 
 Here is how much of TeX's memory you used:
- 15128 strings out of 494045
- 292034 string characters out of 3148371
- 335198 words of memory out of 3000000
- 18225 multiletter control sequences out of 15000+200000
+ 15255 strings out of 494045
+ 296076 string characters out of 3148371
+ 356972 words of memory out of 3000000
+ 18319 multiletter control sequences out of 15000+200000
  19558 words of font info for 82 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 40i,12n,55p,10377b,771s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,12n,55p,10377b,1159s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/M
@@ -1163,9 +1248,9 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Hausarbeit.pdf (6 pages, 183009 bytes).
+Output written on Hausarbeit.pdf (10 pages, 4435509 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

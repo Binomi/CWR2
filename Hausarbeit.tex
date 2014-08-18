@@ -116,6 +116,9 @@
 %Fußnoten auf gleiche Seite
 \interfootnotelinepenalty=1000
 
+%Dateien aus Unterverzeichnissen
+\usepackage{import}              
+
 \begin{document}
 
 \begin{titlepage}
@@ -190,20 +193,21 @@ Substituiert man nun noch $\dot{\varphi}_1$ bsp. durch $\theta_1$ und analog $\d
 Dies kann nun numerisch gelöst werden. 
 
 \section{Kartesische Koordinaten und Energie}
+Aus den Winkeln und Seillängen lassen sich so die kartesischen Koordinaten berechnen:
 \begin{align*}
 	x_1 &= l_1\sin\varphi_1\\
 	y_1 &= -l_1\cos\varphi_1\\	
 	x_2 &= x_1+l_2\sin\varphi_2\\
 	y_2 &= y_1-l_2\cos\varphi_2\\
 \end{align*}
-Geschwindigkeiten
+Leitet man diese ab, erhält man die Geschwindigkeiten.
 \begin{align*}
 	\dot{x}_1 &= l_1\cos\varphi_1 \cdot \dot{\varphi}_1\\
 	\dot{y}_1 &= l_1\sin\varphi_1 \cdot \dot{\varphi}_1\\	
 	\dot{x}_2 &= \dot{x}_1 + l_2\cos\varphi_2 \cdot \dot{\varphi}_2\\
 	\dot{y}_2 &= \dot{y}_1 + l_2\sin\varphi_2 \cdot \dot{\varphi}_2\\
 \end{align*}
-Energie
+Aus all diesen Werten kann die Gesamtenergie des Doppelpendels berechnet werden:
 \begin{align*}
 	E = E_{pot}+E_{kin} = m_1gy_1+m_2gy_2 + \frac{1}{2}m_1\left(\dot{x}_1^2+\dot{y}_1^2\right) + \frac{1}{2}m_2\left(\dot{x}_2^2+\dot{y}_2^2\right)
 \end{align*}
@@ -218,10 +222,10 @@ Sie hat folgende Attribute:
 	\item zugehörige kartesische Koordinaten - auch Geschwindigkeiten
 	\item Energie - anfangs und aktuell
 	\item Saltozähler
-	\item Zeit???
+	\item Zeit
 \end{itemize}
 Die Berechnung der Energie dient der Beurteilung, wie gut die Trajektorie berechnet wurde, da sie konstant sein sollte.
-Die Zählung der Saltos - also ... - habe ich hinzugefügt, um das Verhalten des Pendels einfacher beurteilen zu können, vor allem in Hinblick auf verschiedene Massen- und Längenverhältnisse.
+Die Zählung der Saltos - also wenn die Winkel $82n+1)\pi$ überschreiten - habe ich hinzugefügt, um das Verhalten des Pendels einfacher beurteilen zu können, vor allem in Hinblick auf verschiedene Massen- und Längenverhältnisse.
 So muss nicht jede Trajektorie angeschaut werden.\\
 Der \textit{Konstruktor} setzt $m_1=1\si{\kilo\gram}$ und $l_1=1\si{\meter}$, da wir uns hier nur auf diesen Fall beschränken.
 Da alle Attribute jedoch \textit{public} sind, könnte man diese beiden auch ändern.
@@ -249,6 +253,63 @@ In Abbildung ... ist die Energie gegen die Zeit aufgetragen.
 Man erkennt, dass es Energiespitzen gibt. 
 Die Gesamtenergie fällt jedoch in Fall A ungefähr auf das anfängliche Niveau zurück.
 In Fall B klettert die Energie unaufhörlich, die Simulation ist also nur zu einem gewissen Grad brauchbar.
+
+\section{Scan}
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{salto1rk4.tex}
+	\caption{Zahl der Überschläge der ersten Masse nach 20 Sekunden mitttels Runge-Kutta 4.Ordnung}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{salto2rk4.tex}
+	\caption{Zahl der Überschläge der zweiten Masse nach 20 Sekunden mitttels Runge-Kutta 4.Ordnung}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{energie_rk4.tex}
+	\caption{Energie nach 20 Sekunden mitttels Runge-Kutta 4.Ordnung}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{energie0_rk4.tex}
+	\caption{Anfangsenergie}
+\end{figure}
+
+\section{Trajektorien}
+
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{trajektorie1.tex}
+	\caption{$l_2=5.75\si{\meter}$, $m_2=7\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{trajektorie2.tex}
+	\caption{$l_2=0.5\si{\meter}$, $m_2=0.05\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{trajektorie3.tex}
+	\caption{$l_2=1\si{\meter}$, $m_2=1\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{trajektorie4.tex}
+	\caption{$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subimport*{Programm/}{trajektorie5.tex}
+	\caption{$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 40 Sekunden, $\Delta t = 0.005 \si{\second}$}
+\end{figure}
 
 \section{Anhang}
 
