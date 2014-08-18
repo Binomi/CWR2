@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.20)  18 AUG 2014 10:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.20)  18 AUG 2014 11:46
 entering extended mode
 **Hausarbeit.tex
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Hausarbeit.tex
@@ -131,6 +131,23 @@ Package typearea Info: These are the values describing the layout:
 .sty"
 Package: scrpage2 2010/04/22 v2.5 LaTeX2e KOMA-Script package
 LaTeX Info: Redefining \pagemark on input line 176.
+)
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen103
+\captionmargin@=\dimen104
+\captionwidth=\dimen105
+\caption@tempdima=\dimen106
+\caption@indent=\dimen107
+\caption@parindent=\dimen108
+\caption@hangindent=\dimen109
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count88
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
@@ -145,8 +162,8 @@ Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count88
-\U@D=\dimen103
+\babel@savecnt=\count89
+\U@D=\dimen110
 )
 \l@naustrian = a dialect from \language\l@ngerman 
 Package babel Info: Making " an active character on input line 92.
@@ -381,7 +398,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 52.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 52.
-\big@size=\dimen104
+\big@size=\dimen111
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
@@ -405,46 +422,46 @@ Package: amstext 2000/06/29 v2.01
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
-\ex@=\dimen105
+\ex@=\dimen112
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen106
+\pmbraise@=\dimen113
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count89
+\inf@bad=\count90
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count90
-\leftroot@=\count91
+\uproot@=\count91
+\leftroot@=\count92
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count92
-\DOTSCASE@=\count93
+\classnum@=\count93
+\DOTSCASE@=\count94
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
-\big@size=\dimen107
+\big@size=\dimen114
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count94
-\c@MaxMatrixCols=\count95
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
-\c@parentequation=\count96
-\dspbrk@lvl=\count97
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
 \tag@help=\toks19
-\row@=\count98
-\column@=\count99
-\maxfields@=\count100
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
 \andhelp@=\toks20
-\eqnshift@=\dimen108
-\alignsep@=\dimen109
-\tagshift@=\dimen110
-\tagwidth@=\dimen111
-\totwidth@=\dimen112
-\lineht@=\dimen113
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
 \@envbody=\toks21
 \multlinegap=\skip48
 \multlinetaggap=\skip49
@@ -478,7 +495,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count101
+\Gread@gobject=\count102
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -494,13 +511,13 @@ File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
-\Gin@req@height=\dimen114
-\Gin@req@width=\dimen115
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty"
-\wrapoverhang=\dimen116
-\WF@size=\dimen117
-\c@WF@wrappedlines=\count102
+\wrapoverhang=\dimen123
+\WF@size=\dimen124
+\c@WF@wrappedlines=\count103
 \WF@box=\box30
 \WF@everypar=\toks23
 Package: wrapfig 2003/01/31  v 3.6
@@ -510,14 +527,14 @@ sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip50
 \subfigcapskip=\skip51
-\subfigcaptopadj=\dimen118
+\subfigcaptopadj=\dimen125
 \subfigbottomskip=\skip52
-\subfigcapmargin=\dimen119
+\subfigcapmargin=\dimen126
 \subfiglabelskip=\skip53
-\c@subfigure=\count103
-\c@lofdepth=\count104
-\c@subtable=\count105
-\c@lotdepth=\count106
+\c@subfigure=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@lotdepth=\count107
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -528,17 +545,69 @@ cfg")
 \subfig@top=\skip54
 \subfig@bottom=\skip55
 )
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\adjustbox.
+sty"
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+\XKV@depth=\count108
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\adjcalc.st
+y"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\trimclip.s
+ty"
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\collectbox\collectbo
+x.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box31
+)
+\tc@llx=\dimen127
+\tc@lly=\dimen128
+\tc@urx=\dimen129
+\tc@ury=\dimen130
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\tc-pdftex.
+def"
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen131
+\adjbox@Height=\dimen132
+\adjbox@Depth=\dimen133
+\adjbox@Totalheight=\dimen134
+
+("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\ifoddpage\ifoddpage.
+sty"
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count109
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box32
+\sift@deathcycles=\count110
+\@vwid@loff=\dimen135
+\@vwid@roff=\dimen136
+))
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\sidecap\sidecap.sty"
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\SC@BOXWD=\dimen120
-\SC@CAPWD=\dimen121
-\SC@tempdima=\dimen122
-\SC@tempdimb=\dimen123
-\c@SC@C=\count107
-\SC@BOX=\box31
+\SC@BOXWD=\dimen137
+\SC@CAPWD=\dimen138
+\SC@tempdima=\dimen139
+\SC@tempdimb=\dimen140
+\c@SC@C=\count111
+\SC@BOX=\box33
 )
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty"
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty"
@@ -554,7 +623,7 @@ Package: expl3 2014/05/06 v4751 L3 programming layer (code)
 L3 Module: l3bootstrap 2014/05/06 v4750 L3 Bootstrap code
  ("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count108
+\et@xins=\count112
 )
 L3 Module: l3names 2014/05/04 v4728 L3 Namespace for primitives
 L3 Module: l3basics 2014/05/04 v4728 L3 Basic definitions
@@ -562,31 +631,31 @@ L3 Module: l3expan 2014/04/30 v4712 L3 Argument expansion
 L3 Module: l3tl 2014/05/04 v4728 L3 Token lists
 L3 Module: l3seq 2014/04/30 v4712 L3 Sequences and stacks
 L3 Module: l3int 2014/05/04 v4728 L3 Integers
-\c_max_int=\count109
-\l_tmpa_int=\count110
-\l_tmpb_int=\count111
-\g_tmpa_int=\count112
-\g_tmpb_int=\count113
+\c_max_int=\count113
+\l_tmpa_int=\count114
+\l_tmpb_int=\count115
+\g_tmpa_int=\count116
+\g_tmpb_int=\count117
 L3 Module: l3quark 2014/05/04 v4728 L3 Quarks
 L3 Module: l3prg 2014/05/04 v4728 L3 Control structures
-\g__prg_map_int=\count114
+\g__prg_map_int=\count118
 L3 Module: l3clist 2014/05/04 v4728 L3 Comma separated lists
 L3 Module: l3token 2014/05/04 v4728 L3 Experimental token manipulation
 L3 Module: l3prop 2014/04/30 v4712 L3 Property lists
 L3 Module: l3msg 2014/05/04 v4728 L3 Messages
 L3 Module: l3file 2014/05/05 v4737 L3 File and I/O operations
-\l_iow_line_count_int=\count115
-\l__iow_target_count_int=\count116
-\l__iow_current_line_int=\count117
-\l__iow_current_word_int=\count118
-\l__iow_current_indentation_int=\count119
+\l_iow_line_count_int=\count119
+\l__iow_target_count_int=\count120
+\l__iow_current_line_int=\count121
+\l__iow_current_word_int=\count122
+\l__iow_current_indentation_int=\count123
 L3 Module: l3skip 2014/05/05 v4738 L3 Dimensions and skips
-\c_zero_dim=\dimen124
-\c_max_dim=\dimen125
-\l_tmpa_dim=\dimen126
-\l_tmpb_dim=\dimen127
-\g_tmpa_dim=\dimen128
-\g_tmpb_dim=\dimen129
+\c_zero_dim=\dimen141
+\c_max_dim=\dimen142
+\l_tmpa_dim=\dimen143
+\l_tmpb_dim=\dimen144
+\g_tmpa_dim=\dimen145
+\g_tmpb_dim=\dimen146
 \c_zero_skip=\skip56
 \c_max_skip=\skip57
 \l_tmpa_skip=\skip58
@@ -600,81 +669,81 @@ L3 Module: l3skip 2014/05/05 v4738 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2014/05/04 v4728 L3 Key-value interfaces
-\g__keyval_level_int=\count120
-\l_keys_choice_int=\count121
+\g__keyval_level_int=\count124
+\l_keys_choice_int=\count125
 L3 Module: l3fp 2014/04/30 v4712 L3 Floating points
-\c__fp_leading_shift_int=\count122
-\c__fp_middle_shift_int=\count123
-\c__fp_trailing_shift_int=\count124
-\c__fp_big_leading_shift_int=\count125
-\c__fp_big_middle_shift_int=\count126
-\c__fp_big_trailing_shift_int=\count127
-\c__fp_Bigg_leading_shift_int=\count128
-\c__fp_Bigg_middle_shift_int=\count129
-\c__fp_Bigg_trailing_shift_int=\count130
+\c__fp_leading_shift_int=\count126
+\c__fp_middle_shift_int=\count127
+\c__fp_trailing_shift_int=\count128
+\c__fp_big_leading_shift_int=\count129
+\c__fp_big_middle_shift_int=\count130
+\c__fp_big_trailing_shift_int=\count131
+\c__fp_Bigg_leading_shift_int=\count132
+\c__fp_Bigg_middle_shift_int=\count133
+\c__fp_Bigg_trailing_shift_int=\count134
 L3 Module: l3box 2014/05/04 v4728 L3 Experimental boxes
-\c_empty_box=\box32
-\l_tmpa_box=\box33
-\l_tmpb_box=\box34
-\g_tmpa_box=\box35
-\g_tmpb_box=\box36
+\c_empty_box=\box34
+\l_tmpa_box=\box35
+\l_tmpb_box=\box36
+\g_tmpa_box=\box37
+\g_tmpb_box=\box38
 L3 Module: l3coffins 2014/05/04 v4728 L3 Coffin code layer
-\l__coffin_internal_box=\box37
-\l__coffin_internal_dim=\dimen130
-\l__coffin_offset_x_dim=\dimen131
-\l__coffin_offset_y_dim=\dimen132
-\l__coffin_x_dim=\dimen133
-\l__coffin_y_dim=\dimen134
-\l__coffin_x_prime_dim=\dimen135
-\l__coffin_y_prime_dim=\dimen136
-\c_empty_coffin=\box38
-\l__coffin_aligned_coffin=\box39
-\l__coffin_aligned_internal_coffin=\box40
-\l_tmpa_coffin=\box41
-\l_tmpb_coffin=\box42
-\l__coffin_display_coffin=\box43
-\l__coffin_display_coord_coffin=\box44
-\l__coffin_display_pole_coffin=\box45
-\l__coffin_display_offset_dim=\dimen137
-\l__coffin_display_x_dim=\dimen138
-\l__coffin_display_y_dim=\dimen139
+\l__coffin_internal_box=\box39
+\l__coffin_internal_dim=\dimen147
+\l__coffin_offset_x_dim=\dimen148
+\l__coffin_offset_y_dim=\dimen149
+\l__coffin_x_dim=\dimen150
+\l__coffin_y_dim=\dimen151
+\l__coffin_x_prime_dim=\dimen152
+\l__coffin_y_prime_dim=\dimen153
+\c_empty_coffin=\box40
+\l__coffin_aligned_coffin=\box41
+\l__coffin_aligned_internal_coffin=\box42
+\l_tmpa_coffin=\box43
+\l_tmpb_coffin=\box44
+\l__coffin_display_coffin=\box45
+\l__coffin_display_coord_coffin=\box46
+\l__coffin_display_pole_coffin=\box47
+\l__coffin_display_offset_dim=\dimen154
+\l__coffin_display_x_dim=\dimen155
+\l__coffin_display_y_dim=\dimen156
 L3 Module: l3color 2014/04/30 v4712 L3 Experimental color support
 L3 Module: l3luatex 2014/04/30 v4712 L3 Experimental LuaTeX-specific functions
-\g__cctab_allocate_int=\count131
-\g__cctab_stack_int=\count132
+\g__cctab_allocate_int=\count135
+\g__cctab_stack_int=\count136
 L3 Module: l3candidates 2014/05/04 v4734 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen140
-\l__box_bottom_dim=\dimen141
-\l__box_left_dim=\dimen142
-\l__box_right_dim=\dimen143
-\l__box_top_new_dim=\dimen144
-\l__box_bottom_new_dim=\dimen145
-\l__box_left_new_dim=\dimen146
-\l__box_right_new_dim=\dimen147
-\l__box_internal_box=\box46
-\l__coffin_bounding_shift_dim=\dimen148
-\l__coffin_left_corner_dim=\dimen149
-\l__coffin_right_corner_dim=\dimen150
-\l__coffin_bottom_corner_dim=\dimen151
-\l__coffin_top_corner_dim=\dimen152
-\l__coffin_scaled_total_height_dim=\dimen153
-\l__coffin_scaled_width_dim=\dimen154
+\l__box_top_dim=\dimen157
+\l__box_bottom_dim=\dimen158
+\l__box_left_dim=\dimen159
+\l__box_right_dim=\dimen160
+\l__box_top_new_dim=\dimen161
+\l__box_bottom_new_dim=\dimen162
+\l__box_left_new_dim=\dimen163
+\l__box_right_new_dim=\dimen164
+\l__box_internal_box=\box48
+\l__coffin_bounding_shift_dim=\dimen165
+\l__coffin_left_corner_dim=\dimen166
+\l__coffin_right_corner_dim=\dimen167
+\l__coffin_bottom_corner_dim=\dimen168
+\l__coffin_top_corner_dim=\dimen169
+\l__coffin_scaled_total_height_dim=\dimen170
+\l__coffin_scaled_width_dim=\dimen171
 ))
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xp
 arse.sty"
 Package: xparse 2014/05/05 v4740 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count133
-\l__xparse_m_args_int=\count134
-\l__xparse_mandatory_args_int=\count135
-\l__xparse_processor_int=\count136
-\l__xparse_v_nesting_int=\count137
+\l__xparse_current_arg_int=\count137
+\l__xparse_m_args_int=\count138
+\l__xparse_mandatory_args_int=\count139
+\l__xparse_processor_int=\count140
+\l__xparse_v_nesting_int=\count141
 )
 Package: siunitx 2013/07/31 v2.5s A comprehensive (SI) units package
  ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen155
-\extrarowheight=\dimen156
-\NC@list=\toks24
+\col@sep=\dimen172
+\extrarowheight=\dimen173
+\NC@list=\toks26
 \extratabsurround=\skip62
 \backup@length=\skip63
 )
@@ -683,47 +752,47 @@ l3keys2e.sty"
 Package: l3keys2e 2014/05/05 v4740 LaTeX2e option processing using LaTeX3 keys
 )
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
-\l__siunitx_tmp_box=\box47
-\l__siunitx_tmp_dim=\dimen157
-\l__siunitx_tmp_int=\count138
+\l__siunitx_tmp_box=\box49
+\l__siunitx_tmp_dim=\dimen174
+\l__siunitx_tmp_int=\count142
 Variant \prop_get:NVNT already defined; not changing it on line 371
 Variant \prop_get:NVNF already defined; not changing it on line 372
 Variant \prop_get:NVNTF already defined; not changing it on line 373
-\l__siunitx_number_mantissa_length_int=\count139
-\l__siunitx_number_uncert_length_int=\count140
-\l__siunitx_round_int=\count141
-\l__siunitx_process_decimal_int=\count142
-\l__siunitx_process_uncertainty_int=\count143
-\l__siunitx_process_fixed_int=\count144
-\l__siunitx_process_integer_min_int=\count145
-\l__siunitx_process_precision_int=\count146
-\l__siunitx_group_min_int=\count147
-\l__siunitx_angle_marker_box=\box48
-\l__siunitx_angle_unit_box=\box49
-\l__siunitx_angle_marker_dim=\dimen158
-\l__siunitx_angle_unit_dim=\dimen159
-\l__siunitx_unit_int=\count148
-\l__siunitx_unit_denominator_int=\count149
-\l__siunitx_unit_numerator_int=\count150
-\l__siunitx_unit_prefix_int=\count151
-\l__siunitx_unit_prefix_base_int=\count152
-\l__siunitx_unit_prefix_gram_int=\count153
-\l__siunitx_number_product_int=\count154
+\l__siunitx_number_mantissa_length_int=\count143
+\l__siunitx_number_uncert_length_int=\count144
+\l__siunitx_round_int=\count145
+\l__siunitx_process_decimal_int=\count146
+\l__siunitx_process_uncertainty_int=\count147
+\l__siunitx_process_fixed_int=\count148
+\l__siunitx_process_integer_min_int=\count149
+\l__siunitx_process_precision_int=\count150
+\l__siunitx_group_min_int=\count151
+\l__siunitx_angle_marker_box=\box50
+\l__siunitx_angle_unit_box=\box51
+\l__siunitx_angle_marker_dim=\dimen175
+\l__siunitx_angle_unit_dim=\dimen176
+\l__siunitx_unit_int=\count152
+\l__siunitx_unit_denominator_int=\count153
+\l__siunitx_unit_numerator_int=\count154
+\l__siunitx_unit_prefix_int=\count155
+\l__siunitx_unit_prefix_base_int=\count156
+\l__siunitx_unit_prefix_gram_int=\count157
+\l__siunitx_number_product_int=\count158
 \c__siunitx_one_fill_skip=\skip64
 \l__siunitx_table_unit_align_skip=\skip65
-\l__siunitx_table_exponent_dim=\dimen160
-\l__siunitx_table_integer_dim=\dimen161
-\l__siunitx_table_mantissa_dim=\dimen162
-\l__siunitx_table_marker_dim=\dimen163
-\l__siunitx_table_result_dim=\dimen164
-\l__siunitx_table_uncert_dim=\dimen165
-\l__siunitx_table_fill_pre_dim=\dimen166
-\l__siunitx_table_fill_post_dim=\dimen167
-\l__siunitx_table_fill_mid_dim=\dimen168
-\l__siunitx_table_pre_box=\box50
-\l__siunitx_table_post_box=\box51
-\l__siunitx_table_mantissa_box=\box52
-\l__siunitx_table_result_box=\box53
+\l__siunitx_table_exponent_dim=\dimen177
+\l__siunitx_table_integer_dim=\dimen178
+\l__siunitx_table_mantissa_dim=\dimen179
+\l__siunitx_table_marker_dim=\dimen180
+\l__siunitx_table_result_dim=\dimen181
+\l__siunitx_table_uncert_dim=\dimen182
+\l__siunitx_table_fill_pre_dim=\dimen183
+\l__siunitx_table_fill_post_dim=\dimen184
+\l__siunitx_table_fill_mid_dim=\dimen185
+\l__siunitx_table_pre_box=\box52
+\l__siunitx_table_post_box=\box53
+\l__siunitx_table_mantissa_box=\box54
+\l__siunitx_table_result_box=\box55
 \l__siunitx_table_number_align_skip=\skip66
 \l__siunitx_table_text_align_skip=\skip67
 .................................................
@@ -867,25 +936,25 @@ Package: translator 2010/06/12 ver 1.10
 or\translator-language-mappings.tex")))
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.st
 y"
-\lst@mode=\count155
-\lst@gtempboxa=\box54
-\lst@token=\toks25
-\lst@length=\count156
-\lst@currlwidth=\dimen169
-\lst@column=\count157
-\lst@pos=\count158
-\lst@lostspace=\dimen170
-\lst@width=\dimen171
-\lst@newlines=\count159
-\lst@lineno=\count160
-\lst@maxwidth=\dimen172
+\lst@mode=\count159
+\lst@gtempboxa=\box56
+\lst@token=\toks27
+\lst@length=\count160
+\lst@currlwidth=\dimen186
+\lst@column=\count161
+\lst@pos=\count162
+\lst@lostspace=\dimen187
+\lst@width=\dimen188
+\lst@newlines=\count163
+\lst@lineno=\count164
+\lst@maxwidth=\dimen189
 
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 "
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-\c@lstnumber=\count161
-\lst@skipnumbers=\count162
-\lst@framebox=\box55
+\c@lstnumber=\count165
+\lst@skipnumbers=\count166
+\lst@framebox=\box57
 )
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cf
 g"
@@ -898,13 +967,13 @@ y"
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box56
-\shadowsize=\dimen173
-\@Sbox=\box57
-\do@VerbBox=\toks26
-\the@fancyput=\toks27
-\this@fancyput=\toks28
-\EndVerbatimTokens=\toks29
+\@fancybox=\box58
+\shadowsize=\dimen190
+\@Sbox=\box59
+\do@VerbBox=\toks28
+\the@fancyput=\toks29
+\this@fancyput=\toks30
+\EndVerbatimTokens=\toks31
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read2
 ) ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\mh\empheq.sty"
@@ -918,77 +987,88 @@ Package: mathtools 2014/05/21 v1.14 mathematical typesetting tools
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count163
-\calc@Bcount=\count164
-\calc@Adimen=\dimen174
-\calc@Bdimen=\dimen175
+\calc@Acount=\count167
+\calc@Bcount=\count168
+\calc@Adimen=\dimen191
+\calc@Bdimen=\dimen192
 \calc@Askip=\skip68
 \calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count165
+\calc@Ccount=\count169
 \calc@Cskip=\skip70
 )
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count166
-\l_MT_multwidth_dim=\dimen176
+\g_MT_multlinerow_int=\count170
+\l_MT_multwidth_dim=\dimen193
 \origjot=\skip71
-\l_MT_shortvdotswithinadjustabove_dim=\dimen177
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen178
-\l_MT_above_intertext_sep=\dimen179
-\l_MT_below_intertext_sep=\dimen180
-\l_MT_above_shortintertext_sep=\dimen181
-\l_MT_below_shortintertext_sep=\dimen182
+\l_MT_shortvdotswithinadjustabove_dim=\dimen194
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen195
+\l_MT_above_intertext_sep=\dimen196
+\l_MT_below_intertext_sep=\dimen197
+\l_MT_above_shortintertext_sep=\dimen198
+\l_MT_below_shortintertext_sep=\dimen199
 )
-\l_EQ_equationtype_int=\count167
-\l_EQ_alignmentmode_int=\count168
-\l_EQ_totalwidth_dim=\dimen183
-\l_EQ_displaywidth_dim=\dimen184
-\l_EQ_temp_linewidth_dim=\dimen185
-\EmphEqdelimitershortfall=\dimen186
-\EmphEqdelimiterfactor=\count169
-\g_EQ_toptag_height_dim=\dimen187
-\g_EQ_bottomtag_depth_dim=\dimen188
-\g_EQ_toprow_height_dim=\dimen189
-\g_EQ_bottomrow_depth_dim=\dimen190
-\g_EQ_widesttag_dim=\dimen191
-\EQ_mathdisplay_box=\box58
-\EQ_tag_box=\box59
-\g_EQ_temprow_int=\count170
+\l_EQ_equationtype_int=\count171
+\l_EQ_alignmentmode_int=\count172
+\l_EQ_totalwidth_dim=\dimen200
+\l_EQ_displaywidth_dim=\dimen201
+Normal \dimen register pool exhausted, switching to extended pool.
+\l_EQ_temp_linewidth_dim=\dimen256
+\EmphEqdelimitershortfall=\dimen257
+\EmphEqdelimiterfactor=\count173
+\g_EQ_toptag_height_dim=\dimen258
+\g_EQ_bottomtag_depth_dim=\dimen259
+\g_EQ_toprow_height_dim=\dimen260
+\g_EQ_bottomrow_depth_dim=\dimen261
+\g_EQ_widesttag_dim=\dimen262
+\EQ_mathdisplay_box=\box60
+\EQ_tag_box=\box61
+\g_EQ_temprow_int=\count174
 )
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\import\import.sty"
 Package: import 2009/03/23  v 5.1
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Hausarbeit.aux
-")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+"
+
+LaTeX Warning: Label `fig:geschw12' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: sidecap package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
 
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 "
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count171
-\scratchdimen=\dimen192
-\scratchbox=\box60
-\nofMPsegments=\count172
-\nofMParguments=\count173
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count174
-\MPscratchDim=\dimen193
-\MPnumerator=\count175
-\makeMPintoPDFobject=\count176
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count175
+\scratchdimen=\dimen263
+\scratchbox=\box62
+\nofMPsegments=\count176
+\nofMParguments=\count177
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count178
+\MPscratchDim=\dimen264
+\MPnumerator=\count179
+\makeMPintoPDFobject=\count180
+\everyMPtoPDFconversion=\toks33
 ) ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
@@ -1096,29 +1176,29 @@ Dictionary: translator-basic-dictionary, Language: English
 tx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 )
-\c@lstlisting=\count177
-\Hy@linkcounter=\count178
-\c__siunitx_mathsf_int=\count179
-LaTeX Font Info:    Try loading font information for U+lasy on input line 122.
+\c@lstlisting=\count181
+\Hy@linkcounter=\count182
+\c__siunitx_mathsf_int=\count183
+LaTeX Font Info:    Try loading font information for U+lasy on input line 124.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 122.
+LaTeX Font Info:    Try loading font information for U+msa on input line 124.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 122.
+LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 122.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 124.
 
 ("C:\Users\Felix Home\AppData\Roaming\MiKTeX\2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-\c__siunitx_mathtt_int=\count180
+\c__siunitx_mathtt_int=\count184
 
 [1
 
@@ -1130,18 +1210,18 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 File: doppelpendel.png Graphic file (type png)
 
 <use doppelpendel.png>
-Package pdftex.def Info: doppelpendel.png used on input line 167.
+Package pdftex.def Info: doppelpendel.png used on input line 169.
 (pdftex.def)             Requested size: 237.88905pt x 186.09549pt.
  [3 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/doppelpende
 l.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 220.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 222.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 220.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
  [4] [5]
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/salto
 1rk4.tex" <Programm/salto1rk4.pdf, id=34, 361.35pt x 252.945pt>
@@ -1214,43 +1294,227 @@ File: Programm/trajektorie5.pdf Graphic file (type pdf)
 <use Programm/trajektorie5.pdf>
 Package pdftex.def Info: Programm/trajektorie5.pdf used on input line 106.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
+w1_xvx1.tex" <Programm/geschw1_xvx1.pdf, id=43, 361.35pt x 252.945pt>
+File: Programm/geschw1_xvx1.pdf Graphic file (type pdf)
+
+<use Programm/geschw1_xvx1.pdf>
+Package pdftex.def Info: Programm/geschw1_xvx1.pdf used on input line 108.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
+w1_xvy1.tex" <Programm/geschw1_xvy1.pdf, id=44, 361.35pt x 252.945pt>
+File: Programm/geschw1_xvy1.pdf Graphic file (type pdf)
+
+<use Programm/geschw1_xvy1.pdf>
+Package pdftex.def Info: Programm/geschw1_xvy1.pdf used on input line 108.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
+w1_yvx1.tex" <Programm/geschw1_yvx1.pdf, id=45, 361.35pt x 252.945pt>
+File: Programm/geschw1_yvx1.pdf Graphic file (type pdf)
+
+<use Programm/geschw1_yvx1.pdf>
+Package pdftex.def Info: Programm/geschw1_yvx1.pdf used on input line 102.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
+w1_yvy1.tex" <Programm/geschw1_yvy1.pdf, id=46, 361.35pt x 252.945pt>
+File: Programm/geschw1_yvy1.pdf Graphic file (type pdf)
+
+<use Programm/geschw1_yvy1.pdf>
+Package pdftex.def Info: Programm/geschw1_yvy1.pdf used on input line 102.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
+w1_xvx2.tex" <Programm/geschw1_xvx2.pdf, id=47, 361.35pt x 252.945pt>
+File: Programm/geschw1_xvx2.pdf Graphic file (type pdf)
+
+<use Programm/geschw1_xvx2.pdf>
+Package pdftex.def Info: Programm/geschw1_xvx2.pdf used on input line 107.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
+w1_xvy2.tex" <Programm/geschw1_xvy2.pdf, id=48, 361.35pt x 252.945pt>
+File: Programm/geschw1_xvy2.pdf Graphic file (type pdf)
+
+<use Programm/geschw1_xvy2.pdf>
+Package pdftex.def Info: Programm/geschw1_xvy2.pdf used on input line 107.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
+w1_yvx2.tex" <Programm/geschw1_yvx2.pdf, id=49, 361.35pt x 252.945pt>
+File: Programm/geschw1_yvx2.pdf Graphic file (type pdf)
+
+<use Programm/geschw1_yvx2.pdf>
+Package pdftex.def Info: Programm/geschw1_yvx2.pdf used on input line 107.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
+w1_yvy2.tex" <Programm/geschw1_yvy2.pdf, id=50, 361.35pt x 252.945pt>
+File: Programm/geschw1_yvy2.pdf Graphic file (type pdf)
+
+<use Programm/geschw1_yvy2.pdf>
+Package pdftex.def Info: Programm/geschw1_yvy2.pdf used on input line 107.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie1.tex" <Programm/energie1.pdf, id=51, 361.35pt x 252.945pt>
+File: Programm/energie1.pdf Graphic file (type pdf)
+
+<use Programm/energie1.pdf>
+Package pdftex.def Info: Programm/energie1.pdf used on input line 109.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum1
+.tex" <Programm/dsum1.pdf, id=52, 361.35pt x 252.945pt>
+File: Programm/dsum1.pdf Graphic file (type pdf)
+
+<use Programm/dsum1.pdf>
+Package pdftex.def Info: Programm/dsum1.pdf used on input line 105.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie2.tex" <Programm/energie2.pdf, id=53, 361.35pt x 252.945pt>
+File: Programm/energie2.pdf Graphic file (type pdf)
+
+<use Programm/energie2.pdf>
+Package pdftex.def Info: Programm/energie2.pdf used on input line 109.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum2
+.tex" <Programm/dsum2.pdf, id=54, 361.35pt x 252.945pt>
+File: Programm/dsum2.pdf Graphic file (type pdf)
+
+<use Programm/dsum2.pdf>
+Package pdftex.def Info: Programm/dsum2.pdf used on input line 107.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie3.tex" <Programm/energie3.pdf, id=55, 361.35pt x 252.945pt>
+File: Programm/energie3.pdf Graphic file (type pdf)
+
+<use Programm/energie3.pdf>
+Package pdftex.def Info: Programm/energie3.pdf used on input line 106.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum3
+.tex" <Programm/dsum3.pdf, id=56, 361.35pt x 252.945pt>
+File: Programm/dsum3.pdf Graphic file (type pdf)
+
+<use Programm/dsum3.pdf>
+Package pdftex.def Info: Programm/dsum3.pdf used on input line 110.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie4.tex" <Programm/energie4.pdf, id=57, 361.35pt x 252.945pt>
+File: Programm/energie4.pdf Graphic file (type pdf)
+
+<use Programm/energie4.pdf>
+Package pdftex.def Info: Programm/energie4.pdf used on input line 107.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum4
+.tex" <Programm/dsum4.pdf, id=58, 361.35pt x 252.945pt>
+File: Programm/dsum4.pdf Graphic file (type pdf)
+
+<use Programm/dsum4.pdf>
+Package pdftex.def Info: Programm/dsum4.pdf used on input line 110.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie5.tex" <Programm/energie5.pdf, id=59, 361.35pt x 252.945pt>
+File: Programm/energie5.pdf Graphic file (type pdf)
+
+<use Programm/energie5.pdf>
+Package pdftex.def Info: Programm/energie5.pdf used on input line 104.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum5
+.tex" <Programm/dsum5.pdf, id=60, 361.35pt x 252.945pt>
+File: Programm/dsum5.pdf Graphic file (type pdf)
+
+<use Programm/dsum5.pdf>
+Package pdftex.def Info: Programm/dsum5.pdf used on input line 108.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 ) [6 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/s
-alto1rk4.pdf>] [7 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbe
-it/Programm/salto2rk4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II
-/Hausarbeit/Programm/energie_rk4.pdf>] [8 <C:/Users/Felix Home/Documents/Uni/2.
-Semester/CWR II/Hausarbeit/Programm/energie0_rk4.pdf> <C:/Users/Felix Home/Docu
-ments/Uni/2.Semester/CWR II/Hausarbeit/Programm/trajektorie1.pdf>] [9 <C:/Users
-/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/trajektorie2.pd
-f> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/tra
-jektorie3.pdf>] [10 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausar
-beit/Programm/trajektorie4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/C
-WR II/Hausarbeit/Programm/trajektorie5.pdf>]
+alto1rk4.pdf>]
+
+LaTeX Warning: Text page 7 contains only floats.
+
+[7 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/sal
+to2rk4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Pro
+gramm/energie_rk4.pdf>]
+
+LaTeX Warning: Text page 8 contains only floats.
+
+[8 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/ene
+rgie0_rk4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/
+Programm/trajektorie1.pdf>]
+
+LaTeX Warning: Text page 9 contains only floats.
+
+[9 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/tra
+jektorie2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/
+Programm/trajektorie3.pdf>]
+
+LaTeX Warning: Text page 10 contains only floats.
+
+[10 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/tr
+ajektorie4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit
+/Programm/trajektorie5.pdf>] [11 <C:/Users/Felix Home/Documents/Uni/2.Semester/
+CWR II/Hausarbeit/Programm/geschw1_xvx1.pdf> <C:/Users/Felix Home/Documents/Uni
+/2.Semester/CWR II/Hausarbeit/Programm/geschw1_xvy1.pdf> <C:/Users/Felix Home/D
+ocuments/Uni/2.Semester/CWR II/Hausarbeit/Programm/geschw1_yvx1.pdf> <C:/Users/
+Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/geschw1_yvy1.pdf
+>] [12 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm
+/geschw1_xvx2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarb
+eit/Programm/geschw1_xvy2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CW
+R II/Hausarbeit/Programm/geschw1_yvx2.pdf> <C:/Users/Felix Home/Documents/Uni/2
+.Semester/CWR II/Hausarbeit/Programm/geschw1_yvy2.pdf> <C:/Users/Felix Home/Doc
+uments/Uni/2.Semester/CWR II/Hausarbeit/Programm/energie1.pdf> <C:/Users/Felix 
+Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/dsum1.pdf>] [13 <C:/Us
+ers/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/energie2.pdf
+> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/dsum
+2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm
+/energie3.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/
+Programm/dsum3.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausar
+beit/Programm/energie4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR I
+I/Hausarbeit/Programm/dsum4.pdf>] [14 <C:/Users/Felix Home/Documents/Uni/2.Seme
+ster/CWR II/Hausarbeit/Programm/energie5.pdf> <C:/Users/Felix Home/Documents/Un
+i/2.Semester/CWR II/Hausarbeit/Programm/dsum5.pdf>]
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Hausarbeit.aux
-") ) 
+")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 15255 strings out of 494045
- 296076 string characters out of 3148371
- 356972 words of memory out of 3000000
- 18319 multiletter control sequences out of 15000+200000
+ 17177 strings out of 494045
+ 333315 string characters out of 3148371
+ 424603 words of memory out of 3000000
+ 20149 multiletter control sequences out of 15000+200000
  19558 words of font info for 82 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 40i,12n,55p,10377b,1159s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Hausarbeit.pdf (10 pages, 4435509 bytes).
+ 40i,14n,75p,10377b,1234s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb>
+Output written on Hausarbeit.pdf (14 pages, 6898800 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

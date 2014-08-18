@@ -19,6 +19,7 @@
 \setkomafont{captionlabel}{\sffamily\bfseries}
 \setcapindent{0em}
 
+\usepackage{caption}
 
 %---- Weitere Pakete -----------------------------------------------------------
 % Die Pakete sind alle in der TeX Live Distribution enthalten. Wichtige Adressen
@@ -71,6 +72,7 @@
 %   \label{fig:label-gesamt}
 % \end{figure}
 \usepackage{subfigure}
+\usepackage{adjustbox}
 
 % Caption neben Abbildung
 % Beispiel:
@@ -241,6 +243,7 @@ Außerdem hat sie noch weitere Methoden:
 \end{itemize}
 
 Des Weiteren habe ich noch zwei Methoden implementiert, die den Abstand der Massen zwei verschiedener Doppelpendel zurückgibt.
+Diese werden in den Methoden \textit{rk2VSrk4} und \textit{variiereVerhaeltnisseQuantitativ} genutzt, um die beiden Trajektorien zu vergleichen, die durch die benutzen Integrationsverfahren entstehen.
 
 \section{Vergleich der Integrationsverfahren}
 Zwar ist Runge-Kutta 2.Ordnung mit gleicher Integrationsschrittweite schneller als der 4.Ordnung, aber auch ungenauer. 
@@ -310,6 +313,109 @@ In Fall B klettert die Energie unaufhörlich, die Simulation ist also nur zu ein
 	\subimport*{Programm/}{trajektorie5.tex}
 	\caption{$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 40 Sekunden, $\Delta t = 0.005 \si{\second}$}
 \end{figure}
+
+
+\section{Geschwindigkeiten}
+\begin{figure}
+	\centering
+	\subfigure[$x_1:\dot{x}_1$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{geschw1_xvx1.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[$x_1:\dot{y}_1$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{geschw1_xvy1.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[$y_1:\dot{x}_1$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{geschw1_yvx1}\end{adjustbox}}
+	  \hfill
+	\subfigure[$y_1:\dot{y}_1$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{geschw1_yvy1}\end{adjustbox}}
+  
+  \caption{Geschwindigkeiten der ersten Masse bei folgenden Parametern:\\ $l_2=5.75\si{\meter}$, $m_2=7\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+  \label{fig:geschw11}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\subfigure[$x_2:\dot{x}_2$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{geschw1_xvx2.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[$x_2:\dot{y}_2$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{geschw1_xvy2.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[$y_2:\dot{x}_2$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{geschw1_yvx2}\end{adjustbox}}
+	  \hfill
+	\subfigure[$y_2:\dot{y}_2$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{geschw1_yvy2}\end{adjustbox}}
+  
+  \caption{Geschwindigkeiten der ersten Masse bei folgenden Parametern:\\ $l_2=5.75\si{\meter}$, $m_2=7\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+  \label{fig:geschw12}
+\end{figure}
+
+\section{Kontrollstrukturen}
+\begin{figure}
+	\centering
+	\subfigure[Energie]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{energie1.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[Summe der Abstände]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{dsum1.tex}\end{adjustbox}}
+  
+  \caption{$l_2=5.75\si{\meter}$, $m_2=7\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+  \label{fig:geschw12}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\subfigure[Energie]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{energie2.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[Summe der Abstände]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{dsum2.tex}\end{adjustbox}}
+  
+  \caption{$l_2=0.5\si{\meter}$, $m_2=0.05\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+  \label{fig:geschw12}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\subfigure[Energie]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{energie3.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[Summe der Abstände]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{dsum3.tex}\end{adjustbox}}
+  
+  \caption{$l_2=1\si{\meter}$, $m_2=1\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+  \label{fig:geschw12}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\subfigure[Energie]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{energie4.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[Summe der Abstände]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{dsum4.tex}\end{adjustbox}}
+  
+  \caption{$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
+  \label{fig:geschw12}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\subfigure[Energie]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{energie5.tex}\end{adjustbox}}
+	  \hfill
+	\subfigure[Summe der Abstände]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{dsum5.tex}\end{adjustbox}}
+  
+  \caption{$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 40 Sekunden, $\Delta t = 0.005 \si{\second}$}
+  \label{fig:geschw12}
+\end{figure}
+
 
 \section{Anhang}
 
