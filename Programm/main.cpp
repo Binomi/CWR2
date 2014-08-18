@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/*
+  CWR2-Hausarbeit von Felix Kurtz
+  Projekt 065: Doppelpendel
+  Abgabedatum 18.08.14
+*/
+
 
 // Erdbeschleunigung
 #define g 9.81 // N/kg
@@ -229,23 +235,40 @@ double d2(Doppelpendel a, Doppelpendel b) {
     return sqrt(dx2*dx2+dy2*dy2);
 }
 
+// simuliert für viele Längen- und Massenverhältnisse
+// Neben dem Vergleich der beiden Integrationsverfahren sollen Größen ausgegeben werden,
+// die es erlauben sollen, das Verhalten des Doppelpendels und die Vorhersagekraft beurteilen zu können
 void variiereVerhaeltnisseQuantitativ(double l2_min, double l2_max, double l2_delta,
                                       double m2_min, double m2_max, double m2_delta,
                                       double T, double dt, string datname) {
+    //Ausgabe-Datei öffnen
     ofstream out(datname.c_str());
+    //Pendel anlegen
     Doppelpendel pendel2, pendel4;
+
+    //verschiedene Längen von l2_min bis l2_max in Schritten l2_delta
     for(double l2=l2_min; l2<=l2_max; l2+=l2_delta){
+        //verschiedene Massen von m2_min bis m2_max in Schritten m2_delta
         for(double m2=m2_min; m2<=m2_max; m2+=m2_delta) {
+
+            //richtig initialisieren
             pendel2.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
             pendel4.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
+
+            //Größe für den Unterschied der beiden Integrationsverfahren
+            //Summe der Abstände der beiden Massen bei den unterschiedlichen Integrationsverfahren über die bisher simulierte Zeit
             double d1sum = 0.;
             double d2sum = 0.;
+
             for(double t=0; t<T; t+=dt) {
+                //einmal Runge-Kutta 2. , einmal 4.Ordnung
                 pendel2.berechne_next_step(dt,false);
                 pendel4.berechne_next_step(dt,true);
+
                 d1sum += d1(pendel2, pendel4);
                 d2sum += d2(pendel2, pendel4);
             }
+            //Ausgabe: Länge und Masse - Zahl der Überschläge - Abstände - anfängliche Energie und Energie am Ende der Simulation
             out << l2 << "  " << m2 << "  "
                 << pendel2.salto[0] << "  " << pendel2.salto[1] << "  " << pendel4.salto[0] << "  " << pendel4.salto[1] << "  "
                 << d1sum << "  " << d2sum << "  " << pendel2.E0 << "  " << pendel2.E << "  " << pendel4.E << endl;
@@ -255,18 +278,25 @@ void variiereVerhaeltnisseQuantitativ(double l2_min, double l2_max, double l2_de
     out.close();
 }
 
+// Vergleich der beiden Integrationsverfahren für bestimmte Länge und Masse
 void rk2VSrk4(double l2, double m2, double T, double dt, string datname) {
+    //Ausgabe-Datei öffnen und wichtige Parameter in die erste Zeile schreiben
     ofstream out(datname.c_str());
-    out << "# " << l2 << "  " << m2 << endl;
+    out << "# " << l2 << "  " << m2 << "  " << T << "  " << dt <<endl;
 
+    //Pendel anlegen und initialisieren
     Doppelpendel pendel2, pendel4;
     pendel2.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
     pendel4.initalize(l2,m2,M_PI/4.,1.0,M_PI/3.,1.5);
 
+    //Größe für den Unterschied der beiden Integrationsverfahren
+    //Summe der Abstände der beiden Massen bei den unterschiedlichen Integrationsverfahren über die bisher simulierte Zeit
     double d1sum = 0.;
     double d2sum = 0.;
 
+    //Simulation
     for(double t=0; t<=T; t+=dt) {
+        //Ausgabe: Zeit - Ort - Geschwindigkeit - Energie - Summe der Abstände - Anzahl der Überschläge
         out << t << "  "
             << pendel2.x1 << "  " << pendel2.y1 << "  " << pendel2.x2 << "  " << pendel2.y2 << "  "
             << pendel2.vx1 << "  " << pendel2.vy1 << "  " << pendel2.vx2 << "  " << pendel2.vy2 << "  "
@@ -275,8 +305,10 @@ void rk2VSrk4(double l2, double m2, double T, double dt, string datname) {
             << pendel2.E << "  "  << pendel4.E  << "  " << d1sum << "  " << d2sum << "  "
             << pendel2.salto[0] << "  " << pendel2.salto[1] << "  " << pendel4.salto[0] << "  " << pendel4.salto[1] << endl;
 
+        //einmal Runge-Kutta 2.Ordnung, einmal 4.Ordnung
         pendel2.berechne_next_step(dt,false);
         pendel4.berechne_next_step(dt,true);
+
         d1sum += d1(pendel2, pendel4);
         d2sum += d2(pendel2, pendel4);
     }
@@ -285,15 +317,15 @@ void rk2VSrk4(double l2, double m2, double T, double dt, string datname) {
 
 int main()
 {
-    variiereVerhaeltnisseQuantitativ(0.01, 10., 0.01, 0.01, 10., 0.01, 10, 0.01, "l2m2_genauer1.txt");
-    variiereVerhaeltnisseQuantitativ(0.01, 10., 0.01, 0.01, 10., 0.01, 20, 0.01, "l2m2_genauer2.txt");
-    variiereVerhaeltnisseQuantitativ(0.01, 10., 0.01, 0.01, 10., 0.01, 30, 0.01, "l2m2_genauer3.txt");
-    variiereVerhaeltnisseQuantitativ(0.01, 10., 0.01, 0.01, 10., 0.01, 40, 0.005, "l2m2_genauer4.txt");
+    //dauert lange, deshalb auskommentiert
+    //variiereVerhaeltnisseQuantitativ(0.05, 10., 0.05, 0.05, 10., 0.05, 10, 0.01, "l2m2.txt");
 
-    /*rk2VSrk4(5.75,7.,20.,0.005,"rk2rk4_1.txt");
+    //Verschiedene Simulationen - Vergleich zwischen Runge-Kutta 2.Ordnung und 4.Ordnung
+    rk2VSrk4(5.75,7.,20.,0.005,"rk2rk4_1.txt");
     rk2VSrk4(0.5,0.05,20.,0.005,"rk2rk4_2.txt");
     rk2VSrk4(1.,1.,20.,0.005,"rk2rk4_3.txt");
     rk2VSrk4(3.,0.6,20.,0.005,"rk2rk4_4.txt");
-    rk2VSrk4(3.,0.6,40.,0.005,"rk2rk4_5.txt");*/
+    rk2VSrk4(3.,0.6,40.,0.005,"rk2rk4_5.txt");
+
     return 0;
 }
