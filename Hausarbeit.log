@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.20)  18 AUG 2014 11:46
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.20)  18 AUG 2014 12:46
 entering extended mode
 **Hausarbeit.tex
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Hausarbeit.tex
@@ -1035,6 +1035,18 @@ Package: import 2009/03/23  v 5.1
 
 LaTeX Warning: Label `fig:geschw12' multiply defined.
 
+
+LaTeX Warning: Label `fig:geschw12' multiply defined.
+
+
+LaTeX Warning: Label `fig:geschw12' multiply defined.
+
+
+LaTeX Warning: Label `fig:geschw12' multiply defined.
+
+
+LaTeX Warning: Label `fig:geschw12' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
 LaTeX Font Info:    ... okay on input line 124.
@@ -1222,41 +1234,21 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
- [4] [5]
-("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/salto
-1rk4.tex" <Programm/salto1rk4.pdf, id=34, 361.35pt x 252.945pt>
-File: Programm/salto1rk4.pdf Graphic file (type pdf)
+ [4]
+Overfull \hbox (19.4017pt too wide) in paragraph at lines 252--255
+\OT1/cmr/m/n/12 Variiert man L[]angen- und Mas-sen-verh[]altnisse und be-ob-ach
+-tet da-bei die Zahl der []Uberschl[]age
+ []
 
-<use Programm/salto1rk4.pdf>
-Package pdftex.def Info: Programm/salto1rk4.pdf used on input line 415.
-(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
-)
-("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/salto
-2rk4.tex" <Programm/salto2rk4.pdf, id=35, 361.35pt x 252.945pt>
-File: Programm/salto2rk4.pdf Graphic file (type pdf)
 
-<use Programm/salto2rk4.pdf>
-Package pdftex.def Info: Programm/salto2rk4.pdf used on input line 1004.
-(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
-)
-("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
-ie_rk4.tex" <Programm/energie_rk4.pdf, id=36, 361.35pt x 252.945pt>
-File: Programm/energie_rk4.pdf Graphic file (type pdf)
+Overfull \hbox (5.02577pt too wide) in paragraph at lines 252--255
+\OT1/cmr/m/n/12 den. Man er-war-tet eher "lang-wei-li-ge"Trajektorien. An Stel-
+len mit ho-hen []Uberschlagsraten
+ []
 
-<use Programm/energie_rk4.pdf>
-Package pdftex.def Info: Programm/energie_rk4.pdf used on input line 107.
-(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
-)
-("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
-ie0_rk4.tex" <Programm/energie0_rk4.pdf, id=37, 361.35pt x 252.945pt>
-File: Programm/energie0_rk4.pdf Graphic file (type pdf)
-
-<use Programm/energie0_rk4.pdf>
-Package pdftex.def Info: Programm/energie0_rk4.pdf used on input line 106.
-(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
-)
+[5]
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
-ktorie1.tex" <Programm/trajektorie1.pdf, id=38, 361.35pt x 252.945pt>
+ktorie1.tex" <Programm/trajektorie1.pdf, id=34, 361.35pt x 252.945pt>
 File: Programm/trajektorie1.pdf Graphic file (type pdf)
 
 <use Programm/trajektorie1.pdf>
@@ -1264,7 +1256,7 @@ Package pdftex.def Info: Programm/trajektorie1.pdf used on input line 106.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
-ktorie2.tex" <Programm/trajektorie2.pdf, id=39, 361.35pt x 252.945pt>
+ktorie2.tex" <Programm/trajektorie2.pdf, id=35, 361.35pt x 252.945pt>
 File: Programm/trajektorie2.pdf Graphic file (type pdf)
 
 <use Programm/trajektorie2.pdf>
@@ -1272,7 +1264,7 @@ Package pdftex.def Info: Programm/trajektorie2.pdf used on input line 104.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
-ktorie3.tex" <Programm/trajektorie3.pdf, id=40, 361.35pt x 252.945pt>
+ktorie3.tex" <Programm/trajektorie3.pdf, id=36, 361.35pt x 252.945pt>
 File: Programm/trajektorie3.pdf Graphic file (type pdf)
 
 <use Programm/trajektorie3.pdf>
@@ -1280,7 +1272,7 @@ Package pdftex.def Info: Programm/trajektorie3.pdf used on input line 104.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
-ktorie4.tex" <Programm/trajektorie4.pdf, id=41, 361.35pt x 252.945pt>
+ktorie4.tex" <Programm/trajektorie4.pdf, id=37, 361.35pt x 252.945pt>
 File: Programm/trajektorie4.pdf Graphic file (type pdf)
 
 <use Programm/trajektorie4.pdf>
@@ -1288,15 +1280,60 @@ Package pdftex.def Info: Programm/trajektorie4.pdf used on input line 106.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/traje
-ktorie5.tex" <Programm/trajektorie5.pdf, id=42, 361.35pt x 252.945pt>
+ktorie5.tex" <Programm/trajektorie5.pdf, id=38, 361.35pt x 252.945pt>
 File: Programm/trajektorie5.pdf Graphic file (type pdf)
 
 <use Programm/trajektorie5.pdf>
 Package pdftex.def Info: Programm/trajektorie5.pdf used on input line 106.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+) [6 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/t
+rajektorie1.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbei
+t/Programm/trajektorie2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR 
+II/Hausarbeit/Programm/trajektorie3.pdf>]
+[7 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/tra
+jektorie4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/
+Programm/trajektorie5.pdf>]
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/salto
+1rk4.tex" <Programm/salto1rk4.pdf, id=57, 361.35pt x 252.945pt>
+File: Programm/salto1rk4.pdf Graphic file (type pdf)
+
+<use Programm/salto1rk4.pdf>
+Package pdftex.def Info: Programm/salto1rk4.pdf used on input line 415.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/salto
+2rk4.tex" <Programm/salto2rk4.pdf, id=58, 361.35pt x 252.945pt>
+File: Programm/salto2rk4.pdf Graphic file (type pdf)
+
+<use Programm/salto2rk4.pdf>
+Package pdftex.def Info: Programm/salto2rk4.pdf used on input line 1004.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie_rk4.tex" <Programm/energie_rk4.pdf, id=59, 361.35pt x 252.945pt>
+File: Programm/energie_rk4.pdf Graphic file (type pdf)
+
+<use Programm/energie_rk4.pdf>
+Package pdftex.def Info: Programm/energie_rk4.pdf used on input line 107.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+)
+("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
+ie0_rk4.tex" <Programm/energie0_rk4.pdf, id=60, 361.35pt x 252.945pt>
+File: Programm/energie0_rk4.pdf Graphic file (type pdf)
+
+<use Programm/energie0_rk4.pdf>
+Package pdftex.def Info: Programm/energie0_rk4.pdf used on input line 106.
+(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
+) [8 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/s
+alto1rk4.pdf>]
+
+LaTeX Warning: Text page 9 contains only floats.
+
+[9 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/sal
+to2rk4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Pro
+gramm/energie_rk4.pdf>]
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
-w1_xvx1.tex" <Programm/geschw1_xvx1.pdf, id=43, 361.35pt x 252.945pt>
+w1_xvx1.tex" <Programm/geschw1_xvx1.pdf, id=73, 361.35pt x 252.945pt>
 File: Programm/geschw1_xvx1.pdf Graphic file (type pdf)
 
 <use Programm/geschw1_xvx1.pdf>
@@ -1304,7 +1341,7 @@ Package pdftex.def Info: Programm/geschw1_xvx1.pdf used on input line 108.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
-w1_xvy1.tex" <Programm/geschw1_xvy1.pdf, id=44, 361.35pt x 252.945pt>
+w1_xvy1.tex" <Programm/geschw1_xvy1.pdf, id=74, 361.35pt x 252.945pt>
 File: Programm/geschw1_xvy1.pdf Graphic file (type pdf)
 
 <use Programm/geschw1_xvy1.pdf>
@@ -1312,7 +1349,7 @@ Package pdftex.def Info: Programm/geschw1_xvy1.pdf used on input line 108.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
-w1_yvx1.tex" <Programm/geschw1_yvx1.pdf, id=45, 361.35pt x 252.945pt>
+w1_yvx1.tex" <Programm/geschw1_yvx1.pdf, id=75, 361.35pt x 252.945pt>
 File: Programm/geschw1_yvx1.pdf Graphic file (type pdf)
 
 <use Programm/geschw1_yvx1.pdf>
@@ -1320,7 +1357,7 @@ Package pdftex.def Info: Programm/geschw1_yvx1.pdf used on input line 102.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
-w1_yvy1.tex" <Programm/geschw1_yvy1.pdf, id=46, 361.35pt x 252.945pt>
+w1_yvy1.tex" <Programm/geschw1_yvy1.pdf, id=76, 361.35pt x 252.945pt>
 File: Programm/geschw1_yvy1.pdf Graphic file (type pdf)
 
 <use Programm/geschw1_yvy1.pdf>
@@ -1328,7 +1365,7 @@ Package pdftex.def Info: Programm/geschw1_yvy1.pdf used on input line 102.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
-w1_xvx2.tex" <Programm/geschw1_xvx2.pdf, id=47, 361.35pt x 252.945pt>
+w1_xvx2.tex" <Programm/geschw1_xvx2.pdf, id=77, 361.35pt x 252.945pt>
 File: Programm/geschw1_xvx2.pdf Graphic file (type pdf)
 
 <use Programm/geschw1_xvx2.pdf>
@@ -1336,7 +1373,7 @@ Package pdftex.def Info: Programm/geschw1_xvx2.pdf used on input line 107.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
-w1_xvy2.tex" <Programm/geschw1_xvy2.pdf, id=48, 361.35pt x 252.945pt>
+w1_xvy2.tex" <Programm/geschw1_xvy2.pdf, id=78, 361.35pt x 252.945pt>
 File: Programm/geschw1_xvy2.pdf Graphic file (type pdf)
 
 <use Programm/geschw1_xvy2.pdf>
@@ -1344,7 +1381,7 @@ Package pdftex.def Info: Programm/geschw1_xvy2.pdf used on input line 107.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
-w1_yvx2.tex" <Programm/geschw1_yvx2.pdf, id=49, 361.35pt x 252.945pt>
+w1_yvx2.tex" <Programm/geschw1_yvx2.pdf, id=79, 361.35pt x 252.945pt>
 File: Programm/geschw1_yvx2.pdf Graphic file (type pdf)
 
 <use Programm/geschw1_yvx2.pdf>
@@ -1352,15 +1389,25 @@ Package pdftex.def Info: Programm/geschw1_yvx2.pdf used on input line 107.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/gesch
-w1_yvy2.tex" <Programm/geschw1_yvy2.pdf, id=50, 361.35pt x 252.945pt>
+w1_yvy2.tex" <Programm/geschw1_yvy2.pdf, id=80, 361.35pt x 252.945pt>
 File: Programm/geschw1_yvy2.pdf Graphic file (type pdf)
 
 <use Programm/geschw1_yvy2.pdf>
 Package pdftex.def Info: Programm/geschw1_yvy2.pdf used on input line 107.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
-)
+) [10 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/
+energie0_rk4.pdf>] [11 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hau
+sarbeit/Programm/geschw1_xvx1.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semeste
+r/CWR II/Hausarbeit/Programm/geschw1_xvy1.pdf> <C:/Users/Felix Home/Documents/U
+ni/2.Semester/CWR II/Hausarbeit/Programm/geschw1_yvx1.pdf> <C:/Users/Felix Home
+/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/geschw1_yvy1.pdf>] [12 <C:
+/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/geschw1_x
+vx2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Progra
+mm/geschw1_xvy2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausa
+rbeit/Programm/geschw1_yvx2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/
+CWR II/Hausarbeit/Programm/geschw1_yvy2.pdf>]
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
-ie1.tex" <Programm/energie1.pdf, id=51, 361.35pt x 252.945pt>
+ie1.tex" <Programm/energie1.pdf, id=108, 361.35pt x 252.945pt>
 File: Programm/energie1.pdf Graphic file (type pdf)
 
 <use Programm/energie1.pdf>
@@ -1368,7 +1415,7 @@ Package pdftex.def Info: Programm/energie1.pdf used on input line 109.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum1
-.tex" <Programm/dsum1.pdf, id=52, 361.35pt x 252.945pt>
+.tex" <Programm/dsum1.pdf, id=109, 361.35pt x 252.945pt>
 File: Programm/dsum1.pdf Graphic file (type pdf)
 
 <use Programm/dsum1.pdf>
@@ -1376,7 +1423,7 @@ Package pdftex.def Info: Programm/dsum1.pdf used on input line 105.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
-ie2.tex" <Programm/energie2.pdf, id=53, 361.35pt x 252.945pt>
+ie2.tex" <Programm/energie2.pdf, id=110, 361.35pt x 252.945pt>
 File: Programm/energie2.pdf Graphic file (type pdf)
 
 <use Programm/energie2.pdf>
@@ -1384,7 +1431,7 @@ Package pdftex.def Info: Programm/energie2.pdf used on input line 109.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum2
-.tex" <Programm/dsum2.pdf, id=54, 361.35pt x 252.945pt>
+.tex" <Programm/dsum2.pdf, id=111, 361.35pt x 252.945pt>
 File: Programm/dsum2.pdf Graphic file (type pdf)
 
 <use Programm/dsum2.pdf>
@@ -1392,7 +1439,7 @@ Package pdftex.def Info: Programm/dsum2.pdf used on input line 107.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
-ie3.tex" <Programm/energie3.pdf, id=55, 361.35pt x 252.945pt>
+ie3.tex" <Programm/energie3.pdf, id=112, 361.35pt x 252.945pt>
 File: Programm/energie3.pdf Graphic file (type pdf)
 
 <use Programm/energie3.pdf>
@@ -1400,7 +1447,7 @@ Package pdftex.def Info: Programm/energie3.pdf used on input line 106.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum3
-.tex" <Programm/dsum3.pdf, id=56, 361.35pt x 252.945pt>
+.tex" <Programm/dsum3.pdf, id=113, 361.35pt x 252.945pt>
 File: Programm/dsum3.pdf Graphic file (type pdf)
 
 <use Programm/dsum3.pdf>
@@ -1408,7 +1455,7 @@ Package pdftex.def Info: Programm/dsum3.pdf used on input line 110.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
-ie4.tex" <Programm/energie4.pdf, id=57, 361.35pt x 252.945pt>
+ie4.tex" <Programm/energie4.pdf, id=114, 361.35pt x 252.945pt>
 File: Programm/energie4.pdf Graphic file (type pdf)
 
 <use Programm/energie4.pdf>
@@ -1416,7 +1463,7 @@ Package pdftex.def Info: Programm/energie4.pdf used on input line 107.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum4
-.tex" <Programm/dsum4.pdf, id=58, 361.35pt x 252.945pt>
+.tex" <Programm/dsum4.pdf, id=115, 361.35pt x 252.945pt>
 File: Programm/dsum4.pdf Graphic file (type pdf)
 
 <use Programm/dsum4.pdf>
@@ -1424,7 +1471,7 @@ Package pdftex.def Info: Programm/dsum4.pdf used on input line 110.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/energ
-ie5.tex" <Programm/energie5.pdf, id=59, 361.35pt x 252.945pt>
+ie5.tex" <Programm/energie5.pdf, id=116, 361.35pt x 252.945pt>
 File: Programm/energie5.pdf Graphic file (type pdf)
 
 <use Programm/energie5.pdf>
@@ -1432,58 +1479,23 @@ Package pdftex.def Info: Programm/energie5.pdf used on input line 104.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Programm/dsum5
-.tex" <Programm/dsum5.pdf, id=60, 361.35pt x 252.945pt>
+.tex" <Programm/dsum5.pdf, id=117, 361.35pt x 252.945pt>
 File: Programm/dsum5.pdf Graphic file (type pdf)
 
 <use Programm/dsum5.pdf>
 Package pdftex.def Info: Programm/dsum5.pdf used on input line 108.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
-) [6 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/s
-alto1rk4.pdf>]
-
-LaTeX Warning: Text page 7 contains only floats.
-
-[7 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/sal
-to2rk4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Pro
-gramm/energie_rk4.pdf>]
-
-LaTeX Warning: Text page 8 contains only floats.
-
-[8 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/ene
-rgie0_rk4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/
-Programm/trajektorie1.pdf>]
-
-LaTeX Warning: Text page 9 contains only floats.
-
-[9 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/tra
-jektorie2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/
-Programm/trajektorie3.pdf>]
-
-LaTeX Warning: Text page 10 contains only floats.
-
-[10 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/tr
-ajektorie4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit
-/Programm/trajektorie5.pdf>] [11 <C:/Users/Felix Home/Documents/Uni/2.Semester/
-CWR II/Hausarbeit/Programm/geschw1_xvx1.pdf> <C:/Users/Felix Home/Documents/Uni
-/2.Semester/CWR II/Hausarbeit/Programm/geschw1_xvy1.pdf> <C:/Users/Felix Home/D
-ocuments/Uni/2.Semester/CWR II/Hausarbeit/Programm/geschw1_yvx1.pdf> <C:/Users/
-Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/geschw1_yvy1.pdf
->] [12 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm
-/geschw1_xvx2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarb
-eit/Programm/geschw1_xvy2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CW
-R II/Hausarbeit/Programm/geschw1_yvx2.pdf> <C:/Users/Felix Home/Documents/Uni/2
-.Semester/CWR II/Hausarbeit/Programm/geschw1_yvy2.pdf> <C:/Users/Felix Home/Doc
-uments/Uni/2.Semester/CWR II/Hausarbeit/Programm/energie1.pdf> <C:/Users/Felix 
-Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/dsum1.pdf>] [13 <C:/Us
-ers/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/energie2.pdf
-> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/dsum
-2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm
-/energie3.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/
-Programm/dsum3.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausar
-beit/Programm/energie4.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR I
-I/Hausarbeit/Programm/dsum4.pdf>] [14 <C:/Users/Felix Home/Documents/Uni/2.Seme
-ster/CWR II/Hausarbeit/Programm/energie5.pdf> <C:/Users/Felix Home/Documents/Un
-i/2.Semester/CWR II/Hausarbeit/Programm/dsum5.pdf>]
+) [13 <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/
+energie1.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/P
+rogramm/dsum1.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarb
+eit/Programm/energie2.pdf> <C:/Users/Felix Home/Documents/Uni/2.Semester/CWR II
+/Hausarbeit/Programm/dsum2.pdf>] [14 <C:/Users/Felix Home/Documents/Uni/2.Semes
+ter/CWR II/Hausarbeit/Programm/energie3.pdf> <C:/Users/Felix Home/Documents/Uni
+/2.Semester/CWR II/Hausarbeit/Programm/dsum3.pdf> <C:/Users/Felix Home/Document
+s/Uni/2.Semester/CWR II/Hausarbeit/Programm/energie4.pdf> <C:/Users/Felix Home/
+Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/dsum4.pdf> <C:/Users/Felix 
+Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/energie5.pdf> <C:/User
+s/Felix Home/Documents/Uni/2.Semester/CWR II/Hausarbeit/Programm/dsum5.pdf>]
 ("C:\Users\Felix Home\Documents\Uni\2.Semester\CWR II\Hausarbeit\Hausarbeit.aux
 ")
 
@@ -1491,11 +1503,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17177 strings out of 494045
- 333315 string characters out of 3148371
- 424603 words of memory out of 3000000
- 20149 multiletter control sequences out of 15000+200000
- 19558 words of font info for 82 fonts, out of 3000000 for 9000
+ 17183 strings out of 494045
+ 333399 string characters out of 3148371
+ 384603 words of memory out of 3000000
+ 20155 multiletter control sequences out of 15000+200000
+ 19852 words of font info for 83 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  40i,14n,75p,10377b,1234s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
@@ -1512,7 +1524,7 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on Hausarbeit.pdf (14 pages, 6898800 bytes).
+Output written on Hausarbeit.pdf (14 pages, 6902299 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

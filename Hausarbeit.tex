@@ -237,27 +237,73 @@ Berechnung der Trajektorie\\
 Außerdem hat sie noch weitere Methoden:
 \begin{itemize}
 	\item $\ddot{\varphi}_1\left(\varphi_1, \dot{\varphi}_1,\varphi_2, \dot{\varphi}_2\right)$ und $\ddot{\varphi}_2\left(\varphi_1, \dot{\varphi}_1,\varphi_2, \dot{\varphi}_2\right)$
-	\item Runge-Kutta 2. und 4.Ordnung	
+	\item Runge-Kutta 2. und 4.Ordnung
 	\item Berechnung der kartesischen Koordinaten und deren Ableitungen
 	\item Berechnung der Gesamtenergie
 \end{itemize}
 
 Des Weiteren habe ich noch zwei Methoden implementiert, die den Abstand der Massen zwei verschiedener Doppelpendel zurückgibt.
 Diese werden in den Methoden \textit{rk2VSrk4} und \textit{variiereVerhaeltnisseQuantitativ} genutzt, um die beiden Trajektorien zu vergleichen, die durch die benutzen Integrationsverfahren entstehen.
+Während die zuerst genannte Funktion das zeitliche Verhalten eines bestimmten Doppelpendels berechnet, untersucht die zweite das allgemeine Verhalten bei verschiedenen Längen-/Massenverhältnissen nach den von mir eingeführten Parametern, also Energie, Zahl der Überschläge und Summe der Abstände.
+Dies soll mir später helfen, interessante Konstellationen leichter zu finden.
 
-\section{Vergleich der Integrationsverfahren}
-Zwar ist Runge-Kutta 2.Ordnung mit gleicher Integrationsschrittweite schneller als der 4.Ordnung, aber auch ungenauer. 
-Dies ist bei einem chaotischen System wie diesem unerwünscht.
+\section{Auswertung}
+\subsection{Scan}
+Variiert man Längen- und Massenverhältnisse und beobachtet dabei die Zahl der Überschläge (siehe Anhang -> Scan), erkennt man Bereiche, in denen gar keine Überschäge stattfinden. Man erwartet eher "langweilige" Trajektorien. An Stellen mit hohen Überschlagsraten kann men interessantere Bahnen erwarten.
+Vergleicht man jedoch noch die Energie, die das Doppelpendel am Ende der Simulation mit der Anfangsenergie, stellt man fest, dass die Energie auch an den interessanten Stellen ungewöhnlich zugenommen hat.
+So kann man den Daten nicht ganz trauen.
 
-\section{Entwicklung der Gesamtenergie}
+\subsection{Trajektorien}
+Hier sind ein paar Trajektorien der zweiten Masse dargestellt, die die verschiedenen Verhaltensweisen des Pendels darstellen sollen. Von langsamen Hin-und-Her-Schwingen bis wirren Bewegungen ist alles dabei.
+Auf das Darstellen der ersten Masse habe ich verzichtet, da sie sich nur auf einer Kreisbahn bewegen kann.
+
+\begin{figure}[!htb]
+	\centering
+	\subfigure[$l_2=5.75\si{\meter}$, $m_2=7\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{trajektorie1.tex}\end{adjustbox}}
+	  \hfill
+	  \subfigure[$l_2=0.5\si{\meter}$, $m_2=0.05\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{trajektorie2.tex}\end{adjustbox}}
+	  \hfill
+	  \subfigure[$l_2=1\si{\meter}$, $m_2=1\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{trajektorie3.tex}\end{adjustbox}}
+	\caption{verschiedene Trajektorien der zweiten Masse}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\subfigure[$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{trajektorie4.tex}\end{adjustbox}}
+	  \hfill
+	  \subfigure[$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 40 Sekunden, $\Delta t = 0.005 \si{\second}$]
+	  {\begin{adjustbox}{width=0.43\linewidth}\subimport*{Programm/}{trajektorie5.tex}\end{adjustbox}}
+	\caption{Trajektorie der zweiten Masse - Zeitdauer verschieden}
+\end{figure}
+
+\subsection{Geschwindigkeiten}
+Unter Anhang->Geschwindigkeiten habe ich zur ersten Konstellation die Geschwindigkeiten aufgetragen. Zu jeder kartesischen Koordinate wird die Geschwindigkeit entlang dieser und der anderen Achse aufgetragen.
+Dies wir für beide Massen gemacht.
+Ein 3D-Plot ist nicht sinnvoll, da man dort nichts erkennen konnte.\\
+Man sieht die Unterschiede der beiden Integrationsverfahren.
+Merkwürdigerweise sind die erreichten Geschwindigkeiten beim Runge-Kutta-Verfahren 4.Ordnung zum Teil viel größer als die mit dem 2.Ordnung.
+Dies soll später genauer untersucht werden.
+
+\subsection{Entwicklung der Gesamtenergie}
 Um die Genauigkeit des Integrationsverfahrens zu überprüfen, kann man sich die Gesamtenergie anschauen.
 Diese sollte bekanntlich konstant sein.
-In Abbildung ... ist die Energie gegen die Zeit aufgetragen.
-Man erkennt, dass es Energiespitzen gibt. 
-Die Gesamtenergie fällt jedoch in Fall A ungefähr auf das anfängliche Niveau zurück.
-In Fall B klettert die Energie unaufhörlich, die Simulation ist also nur zu einem gewissen Grad brauchbar.
+Zu den obigen Trajektorien ist diese Entwicklung unter Anhang -> Kontrollstrukturen zu finden.
+Man erkennt Spitzen, danach pendelt sie sich wieder auf dem gleich Niveau ein.
+Simuliert man jedoch über längere Zeiten ist dies nicht der Fall und sie steigt und steigt. Die Simulation ist also wertlos.
 
-\section{Scan}
+\subsection{Vergleich der Integrationsverfahren}
+Zwar ist Runge-Kutta 2.Ordnung mit gleicher Integrationsschrittweite schneller als der 4.Ordnung, aber allgemein auch ungenauer. 
+Dies ist bei einem chaotischen System wie diesem unerwünscht.\\
+Vergleicht man jedoch die Entwicklung der Gesamtenergie, stellt man fest, dass auf unerklärliche Weise die Energie in Abb. 10 bei dem Verfahren 4.Ordnung steigt und sich letztlich auf einem höheren Niveau einpendelt, als bei dem Verfahren 2.Ordnung.
+Dies scheint jedoch nur Zufall zu sein, denn allgemein - wie in Abb 14 zu sehen, ist das Verfahren 4.Ordnung genauer sein.\\ 
+Da wir hier ein chaotisches System vorliegen haben, ist es sinnvoll, nur eine kurze Zeitspanne zu simulieren, da kleinste Abweichungen von der richtigen Bahn große Auswirkungen haben.
+
+\section{Anhang}
+\subsection{Scan}
 \begin{figure}[!htb]
 	\centering
 	\subimport*{Programm/}{salto1rk4.tex}
@@ -281,41 +327,8 @@ In Fall B klettert die Energie unaufhörlich, die Simulation ist also nur zu ein
 	\subimport*{Programm/}{energie0_rk4.tex}
 	\caption{Anfangsenergie}
 \end{figure}
-
-\section{Trajektorien}
-
-\begin{figure}[!htb]
-	\centering
-	\subimport*{Programm/}{trajektorie1.tex}
-	\caption{$l_2=5.75\si{\meter}$, $m_2=7\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
-\end{figure}
-
-\begin{figure}[!htb]
-	\centering
-	\subimport*{Programm/}{trajektorie2.tex}
-	\caption{$l_2=0.5\si{\meter}$, $m_2=0.05\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
-\end{figure}
-
-\begin{figure}[!htb]
-	\centering
-	\subimport*{Programm/}{trajektorie3.tex}
-	\caption{$l_2=1\si{\meter}$, $m_2=1\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
-\end{figure}
-
-\begin{figure}[!htb]
-	\centering
-	\subimport*{Programm/}{trajektorie4.tex}
-	\caption{$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 20 Sekunden, $\Delta t = 0.005 \si{\second}$}
-\end{figure}
-
-\begin{figure}[!htb]
-	\centering
-	\subimport*{Programm/}{trajektorie5.tex}
-	\caption{$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 40 Sekunden, $\Delta t = 0.005 \si{\second}$}
-\end{figure}
-
-
-\section{Geschwindigkeiten}
+\newpage
+\subsection{Geschwindigkeiten}
 \begin{figure}
 	\centering
 	\subfigure[$x_1:\dot{x}_1$]
@@ -352,7 +365,8 @@ In Fall B klettert die Energie unaufhörlich, die Simulation ist also nur zu ein
   \label{fig:geschw12}
 \end{figure}
 
-\section{Kontrollstrukturen}
+\newpage
+\subsection{Kontrollstrukturen}
 \begin{figure}
 	\centering
 	\subfigure[Energie]
@@ -415,8 +429,5 @@ In Fall B klettert die Energie unaufhörlich, die Simulation ist also nur zu ein
   \caption{$l_2=3\si{\meter}$, $m_2=0.6\si{\kilo\gram}$, 40 Sekunden, $\Delta t = 0.005 \si{\second}$}
   \label{fig:geschw12}
 \end{figure}
-
-
-\section{Anhang}
 
 \end{document}
